@@ -1,0 +1,38 @@
+[
+{
+  "directory": "C:/Users/micah/Documents/MultithreadedServer/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/micah/Documents/MultithreadedServer/include -g -std=gnu++20 -o CMakeFiles\\MultithreadedServer.dir\\src\\main.cpp.obj -c C:\\Users\\micah\\Documents\\MultithreadedServer\\src\\main.cpp",
+  "file": "C:/Users/micah/Documents/MultithreadedServer/src/main.cpp",
+  "output": "C:/Users/micah/Documents/MultithreadedServer/build/CMakeFiles/MultithreadedServer.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/micah/Documents/MultithreadedServer/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/micah/Documents/MultithreadedServer/include -g -std=gnu++20 -o CMakeFiles\\MultithreadedServer.dir\\src\\TcpServer.cpp.obj -c C:\\Users\\micah\\Documents\\MultithreadedServer\\src\\TcpServer.cpp",
+  "file": "C:/Users/micah/Documents/MultithreadedServer/src/TcpServer.cpp",
+  "output": "C:/Users/micah/Documents/MultithreadedServer/build/CMakeFiles/MultithreadedServer.dir/src/TcpServer.cpp.obj"
+},
+{
+  "directory": "C:/Users/micah/Documents/MultithreadedServer/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/micah/Documents/MultithreadedServer/include -g -std=gnu++20 -o CMakeFiles\\MultithreadedServer.dir\\src\\ConnectionHandler.cpp.obj -c C:\\Users\\micah\\Documents\\MultithreadedServer\\src\\ConnectionHandler.cpp",
+  "file": "C:/Users/micah/Documents/MultithreadedServer/src/ConnectionHandler.cpp",
+  "output": "C:/Users/micah/Documents/MultithreadedServer/build/CMakeFiles/MultithreadedServer.dir/src/ConnectionHandler.cpp.obj"
+},
+{
+  "directory": "C:/Users/micah/Documents/MultithreadedServer/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/micah/Documents/MultithreadedServer/include -g -std=gnu++20 -o CMakeFiles\\MultithreadedServer.dir\\src\\ThreadPool.cpp.obj -c C:\\Users\\micah\\Documents\\MultithreadedServer\\src\\ThreadPool.cpp",
+  "file": "C:/Users/micah/Documents/MultithreadedServer/src/ThreadPool.cpp",
+  "output": "C:/Users/micah/Documents/MultithreadedServer/build/CMakeFiles/MultithreadedServer.dir/src/ThreadPool.cpp.obj"
+},
+{
+  "directory": "C:/Users/micah/Documents/MultithreadedServer/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/micah/Documents/MultithreadedServer/include -g -std=gnu++20 -o CMakeFiles\\MultithreadedServer.dir\\src\\Logger.cpp.obj -c C:\\Users\\micah\\Documents\\MultithreadedServer\\src\\Logger.cpp",
+  "file": "C:/Users/micah/Documents/MultithreadedServer/src/Logger.cpp",
+  "output": "C:/Users/micah/Documents/MultithreadedServer/build/CMakeFiles/MultithreadedServer.dir/src/Logger.cpp.obj"
+},
+{
+  "directory": "C:/Users/micah/Documents/MultithreadedServer/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/micah/Documents/MultithreadedServer/include -g -std=gnu++20 -o CMakeFiles\\MultithreadedServer.dir\\src\\Security.cpp.obj -c C:\\Users\\micah\\Documents\\MultithreadedServer\\src\\Security.cpp",
+  "file": "C:/Users/micah/Documents/MultithreadedServer/src/Security.cpp",
+  "output": "C:/Users/micah/Documents/MultithreadedServer/build/CMakeFiles/MultithreadedServer.dir/src/Security.cpp.obj"
+}
+]

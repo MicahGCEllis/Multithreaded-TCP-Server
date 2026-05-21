@@ -1,0 +1,65 @@
+/* style.css */
+body {
+    background-color: #1a1a1a;
+    color: #39ff14;
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px rgba(57, 255, 20, 0.6);
+    margin-bottom: 2rem;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.metric-card {
+    background-color: #242424;
+    border: 1px solid #39ff14;
+    border-radius: 4px;
+    padding: 1.5rem;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.15);
+    transition: all 0.2s ease-in-out;
+}
+
+.metric-card:hover {
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.5);
+    background-color: #2a2a2a;
+}
+
+.firewall-btn {
+    background-color: #d32f2f;
+    color: white;
+    border: 2px solid #b71c1c;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px rgba(211, 47, 47, 0.5);
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.firewall-btn:hover {
+    background-color: #f44336;
+    box-shadow: 0 0 20px rgba(244, 67, 54, 0.8);
+}
+
+#firewall-status {
+    margin-top: 1rem;
+    font-weight: bold;
+    height: 1.5rem;
+}

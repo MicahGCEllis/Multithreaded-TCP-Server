@@ -1,0 +1,36 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Diagnostics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>Server Diagnostics Dashboard</h1>
+
+    <div class="main-container">
+        <div class="metric-card">
+            <h2>Uptime</h2>
+            <p>99.9%</p>
+        </div>
+        
+        <div class="metric-card">
+            <h2>Concurrency Test</h2>
+            <p id="concurrency-status">Initializing...</p>
+        </div>
+        
+        <div class="metric-card">
+            <h2>CPU Load</h2>
+            <p>14%</p>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem;">
+        <button id="firewall-btn" class="firewall-btn">Test Firewall</button>
+        <p id="firewall-status"></p>
+    </div>
+</body>
+</html>
