@@ -22,7 +22,6 @@ void ConnectionHandler::HandleConnection()
     {
         std::string client_message(buffer, bytes_read);
         std::istringstream request_stream(client_message);
-        this->logger.Log("Received data from client: " + client_message);
         std::string method;
         std::string path;
 
@@ -37,7 +36,7 @@ void ConnectionHandler::HandleConnection()
 
         if (!Security::isPathSafe(path))
         {
-            logger.Log("SECURITY ALERT: Unsafe path detected: " + path);
+            logger.LogTraffic(method,path, 403);
             std::string response = "HTTP/1.1 403 Forbidden\r\nContent-Length: 11\r\n\r\nForbidden";
             send(client_socket, response.c_str(), response.size(), 0);
             closesocket(client_socket);
@@ -74,12 +73,14 @@ void ConnectionHandler::HandleConnection()
             file_buffer << file.rdbuf();
             std::string response = "HTTP/1.1 200 OK\r\nContent-Type: " + content_type + "\r\n\r\n";
             response += file_buffer.str();
+            logger.LogTraffic(method, path, 200);
             send(client_socket, response.c_str(), response.size(), 0);
         }
 
         else
         {
             std::string response = "HTTP/1.1 404 Not Found\r\nContent-Length: 13\r\n\r\n404 Not Found";
+            logger.LogTraffic(method, path, 404);
             send(client_socket, response.c_str(), response.size(), 0);
         }
     }

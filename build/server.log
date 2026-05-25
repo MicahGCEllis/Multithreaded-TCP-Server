@@ -959,3 +959,1669 @@ Accept-Language: en-US,en;q=0.9
 
 [2026-05-21 17:33:38] SECURITY ALERT: Unsafe path detected: %2e%2e%2fWindows/System32
 [2026-05-21 17:33:38] Accepted new client...connected
+[2026-05-22 19:01:18] Server running and listening on port 8080
+[2026-05-22 19:01:30] Accepted new client...connected
+[2026-05-22 19:01:30] Received data from client: GET / HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:30] Accepted new client...connected
+[2026-05-22 19:01:30] Received data from client: GET /style.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:30] Accepted new client...connected
+[2026-05-22 19:01:30] Received data from client: GET /app.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:30] Accepted new client...connected
+[2026-05-22 19:01:30] Received data from client: GET /dummy-file-test-0.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:31] Accepted new client...connected
+[2026-05-22 19:01:31] Received data from client: GET /dummy-file-test-1.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:31] Accepted new client...connected
+[2026-05-22 19:01:31] Received data from client: GET /dummy-file-test-2.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:31] Accepted new client...connected
+[2026-05-22 19:01:31] Accepted new client...connected
+[2026-05-22 19:01:31] Received data from client: GET /dummy-file-test-3.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:31] Received data from client: GET /dummy-file-test-4.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:31] Accepted new client...connected
+[2026-05-22 19:01:31] Received data from client: GET /dummy-file-test-5.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:31] Accepted new client...connected
+[2026-05-22 19:01:31] Received data from client: GET /dummy-file-test-6.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:31] Accepted new client...connected
+[2026-05-22 19:01:31] Received data from client: GET /dummy-file-test-7.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:31] Accepted new client...connected
+[2026-05-22 19:01:31] Accepted new client...connected
+[2026-05-22 19:01:31] Accepted new client...connected
+[2026-05-22 19:01:31] Received data from client: GET /dummy-file-test-8.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:31] Received data from client: GET /dummy-file-test-9.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:31] Received data from client: GET /dummy-file-test-10.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:31] Accepted new client...connected
+[2026-05-22 19:01:31] Received data from client: GET /dummy-file-test-11.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:31] Accepted new client...connected
+[2026-05-22 19:01:31] Received data from client: GET /dummy-file-test-12.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:31] Accepted new client...connected
+[2026-05-22 19:01:31] Received data from client: GET /dummy-file-test-13.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:31] Accepted new client...connected
+[2026-05-22 19:01:31] Accepted new client...connected
+[2026-05-22 19:01:31] Received data from client: GET /dummy-file-test-14.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:31] Received data from client: GET /dummy-file-test-15.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:31] Accepted new client...connected
+[2026-05-22 19:01:31] Received data from client: GET /dummy-file-test-16.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:31] Accepted new client...connected
+[2026-05-22 19:01:31] Accepted new client...connected
+[2026-05-22 19:01:31] Received data from client: GET /dummy-file-test-17.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:31] Received data from client: GET /dummy-file-test-18.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:01:32] Accepted new client...connected
+[2026-05-22 19:01:32] Received data from client: GET /dummy-file-test-19.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:37] Server running and listening on port 8080
+[2026-05-22 19:17:41] Accepted new client...connected
+[2026-05-22 19:17:41] Received data from client: GET / HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:41] Accepted new client...connected
+[2026-05-22 19:17:41] Received data from client: GET /style.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:41] Accepted new client...connected
+[2026-05-22 19:17:41] Received data from client: GET /app.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:41] Accepted new client...connected
+[2026-05-22 19:17:41] Received data from client: GET /dummy-file-test-0.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:42] Accepted new client...connected
+[2026-05-22 19:17:42] Accepted new client...connected
+[2026-05-22 19:17:42] Accepted new client...connected
+[2026-05-22 19:17:42] Received data from client: GET /dummy-file-test-1.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:42] Received data from client: GET /dummy-file-test-2.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:42] Received data from client: GET /dummy-file-test-3.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:42] Accepted new client...connected
+[2026-05-22 19:17:42] Received data from client: GET /dummy-file-test-4.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:42] Accepted new client...connected
+[2026-05-22 19:17:42] Received data from client: GET /dummy-file-test-5.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:42] Accepted new client...connected
+[2026-05-22 19:17:42] Received data from client: GET /dummy-file-test-6.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:42] Accepted new client...connected
+[2026-05-22 19:17:42] Received data from client: GET /dummy-file-test-7.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:42] Accepted new client...connected
+[2026-05-22 19:17:42] Received data from client: GET /dummy-file-test-8.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:42] Accepted new client...connected
+[2026-05-22 19:17:42] Received data from client: GET /dummy-file-test-9.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:42] Accepted new client...connected
+[2026-05-22 19:17:42] Received data from client: GET /dummy-file-test-10.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:42] Accepted new client...connected
+[2026-05-22 19:17:42] Received data from client: GET /dummy-file-test-11.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:42] Accepted new client...connected
+[2026-05-22 19:17:42] Received data from client: GET /dummy-file-test-12.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:42] Accepted new client...connected
+[2026-05-22 19:17:42] Accepted new client...connected
+[2026-05-22 19:17:42] Accepted new client...connected
+[2026-05-22 19:17:42] Received data from client: GET /dummy-file-test-13.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:42] Received data from client: GET /dummy-file-test-14.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:42] Received data from client: GET /dummy-file-test-15.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:42] Accepted new client...connected
+[2026-05-22 19:17:42] Received data from client: GET /dummy-file-test-16.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:42] Accepted new client...connected
+[2026-05-22 19:17:42] Received data from client: GET /dummy-file-test-17.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:42] Accepted new client...connected
+[2026-05-22 19:17:42] Received data from client: GET /dummy-file-test-18.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:17:43] Accepted new client...connected
+[2026-05-22 19:17:43] Received data from client: GET /dummy-file-test-19.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:52] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:20:53] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:17] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:21:18] Accepted new client...connected
+[2026-05-22 19:22:50] Accepted new client...connected
+[2026-05-22 19:22:50] Received data from client: GET / HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:51] Accepted new client...connected
+[2026-05-22 19:22:51] Received data from client: GET /style.css HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:51] Accepted new client...connected
+[2026-05-22 19:22:51] Received data from client: GET /app.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:51] Accepted new client...connected
+[2026-05-22 19:22:51] Received data from client: GET /dummy-file-test-0.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:51] Accepted new client...connected
+[2026-05-22 19:22:51] Accepted new client...connected
+[2026-05-22 19:22:51] Accepted new client...connected
+[2026-05-22 19:22:51] Received data from client: GET /dummy-file-test-1.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:51] Accepted new client...connected
+[2026-05-22 19:22:51] Received data from client: GET /dummy-file-test-2.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:51] Received data from client: GET /dummy-file-test-3.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:51] Received data from client: GET /dummy-file-test-4.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:51] Accepted new client...connected
+[2026-05-22 19:22:51] Accepted new client...connected
+[2026-05-22 19:22:51] Received data from client: GET /dummy-file-test-5.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:51] Received data from client: GET /dummy-file-test-6.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:51] Accepted new client...connected
+[2026-05-22 19:22:51] Received data from client: GET /dummy-file-test-7.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:51] Accepted new client...connected
+[2026-05-22 19:22:51] Received data from client: GET /dummy-file-test-8.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:51] Accepted new client...connected
+[2026-05-22 19:22:51] Received data from client: GET /dummy-file-test-9.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:51] Accepted new client...connected
+[2026-05-22 19:22:51] Received data from client: GET /dummy-file-test-10.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:52] Accepted new client...connected
+[2026-05-22 19:22:52] Received data from client: GET /dummy-file-test-11.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:52] Accepted new client...connected
+[2026-05-22 19:22:52] Received data from client: GET /dummy-file-test-12.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:52] Accepted new client...connected
+[2026-05-22 19:22:52] Received data from client: GET /dummy-file-test-13.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:52] Accepted new client...connected
+[2026-05-22 19:22:52] Accepted new client...connected
+[2026-05-22 19:22:52] Received data from client: GET /dummy-file-test-14.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:52] Received data from client: GET /dummy-file-test-15.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:52] Accepted new client...connected
+[2026-05-22 19:22:52] Received data from client: GET /dummy-file-test-16.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:52] Accepted new client...connected
+[2026-05-22 19:22:52] Received data from client: GET /dummy-file-test-17.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:52] Accepted new client...connected
+[2026-05-22 19:22:52] Received data from client: GET /dummy-file-test-18.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+
+[2026-05-22 19:22:52] Accepted new client...connected
+[2026-05-22 19:22:52] Received data from client: GET /dummy-file-test-19.txt HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+sec-ch-ua-platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+

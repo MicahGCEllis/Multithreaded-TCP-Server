@@ -1,14 +1,8 @@
 # ninja log v7
-14	3371	8009224455776907	CMakeFiles/MultithreadedServer.dir/src/main.cpp.obj	4deaa76851f7b4be
-1959	2173	8009466224040254	MultithreadedServer.exe	9fe0745bd073e2ad
-14	3696	8009247344580942	CMakeFiles/MultithreadedServer.dir/src/TcpServer.cpp.obj	ecd269a2fff10b08
-164	9637	8011049939446853	CMakeFiles/MultithreadedServer.dir/src/ConnectionHandler.cpp.obj	f085796540834f51
-37	2733	8009115403252462	CMakeFiles/MultithreadedServer.dir/src/ThreadPool.cpp.obj	7edd60b9d5bb2e78
-10	2207	8009209946899872	CMakeFiles/MultithreadedServer.dir/src/Logger.cpp.obj	c6ac4554aa3e959f
+159	5423	8014275519961230	CMakeFiles/MultithreadedServer.dir/src/main.cpp.obj	4deaa76851f7b4be
+3211	3708	8014280973280544	MultithreadedServer.exe	c31cfd07aee2ef60
+52	3418	8014278619505157	CMakeFiles/MultithreadedServer.dir/src/TcpServer.cpp.obj	ecd269a2fff10b08
+532	5650	8014275523648503	CMakeFiles/MultithreadedServer.dir/src/ConnectionHandler.cpp.obj	f085796540834f51
+550	5995	8014275523870520	CMakeFiles/MultithreadedServer.dir/src/ThreadPool.cpp.obj	7edd60b9d5bb2e78
+13	3209	8014280941267217	CMakeFiles/MultithreadedServer.dir/src/Logger.cpp.obj	c6ac4554aa3e959f
 21	678	8011052658631532	CMakeFiles/MultithreadedServer.dir/src/Security.cpp.obj	fb2dd4672b31ac4b
-680	911	8011052665248225	MultithreadedServer.exe	c31cfd07aee2ef60
-18	2900	8011059118149265	CMakeFiles/MultithreadedServer.dir/src/ConnectionHandler.cpp.obj	f085796540834f51
-7	3169	8011059118051220	CMakeFiles/MultithreadedServer.dir/src/main.cpp.obj	4deaa76851f7b4be
-12	3270	8011059118106260	CMakeFiles/MultithreadedServer.dir/src/TcpServer.cpp.obj	ecd269a2fff10b08
-24	3401	8011059118215945	CMakeFiles/MultithreadedServer.dir/src/ThreadPool.cpp.obj	7edd60b9d5bb2e78
-3402	3634	8011059151994607	MultithreadedServer.exe	c31cfd07aee2ef60

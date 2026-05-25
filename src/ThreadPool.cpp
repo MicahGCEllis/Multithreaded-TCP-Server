@@ -6,6 +6,7 @@
 */
 
 #include "../include/ThreadPool.hpp"
+#include "../include/Logger.hpp"
 
 ThreadPool::ThreadPool(size_t ThreadCount, Logger& logger)
 : logger(logger)
@@ -34,6 +35,8 @@ void ThreadPool::WorkerLoop()
         SOCKET client_socket = clientQueue.front();
         clientQueue.pop();
         lock.unlock();
+
+        this->logger.LogSystem(std::this_thread::get_id(), "Processing Connection");
 
         ConnectionHandler handler(client_socket, this->logger);
         handler.HandleConnection();

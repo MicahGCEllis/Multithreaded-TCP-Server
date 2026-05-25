@@ -1,0 +1,13 @@
+# CMake build directories
+/build/
+/out/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+
+# Compiled binaries
+*.exe
+*.o
+*.out
+*.log

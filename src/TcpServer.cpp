@@ -9,7 +9,7 @@
 // Additionally, avoding the chance of duplicates of memebers being initalized in the body of the constructor and class call
 TcpServer::TcpServer(uint16_t port) 
     : port(port), socket_file_descriptor(INVALID_SOCKET), 
-    is_running(false), logger("server.log"), pool(Config::THREAD_POOL_SIZE, this->logger)
+    is_running(false), logger(), pool(Config::THREAD_POOL_SIZE, this->logger)
     {
         // Initalize Winsock (Microsft local variable) 
         // Nothing is assigned as this acts like a notepad for the network
@@ -67,7 +67,7 @@ void TcpServer::SetupSocket()
 void TcpServer::Start(std::atomic<bool>& isRunning) 
 {
     SetupSocket();
-    logger.Log("Server running and listening on port " + std::to_string(this->port));
+    std::cout << "Server running and listening on port " << this->port << std::endl;
     
 
     while (isRunning.load())
@@ -106,7 +106,7 @@ void TcpServer::Start(std::atomic<bool>& isRunning)
             }
             else
             {
-            this->logger.Log("Accepted new client...connected");
+            std::cout << "Accepted new client...connected" << std::endl;
             pool.EnqueueClient(client_socket);
             }
         }
