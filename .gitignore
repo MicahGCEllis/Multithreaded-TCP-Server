@@ -6,8 +6,23 @@ CMakeFiles/
 Makefile
 cmake_install.cmake
 
-# Compiled binaries
+# Compiled Executables
 *.exe
-*.o
 *.out
-*.log
+*.o
+*.obj
+*.lib
+*.dll
+*.a
+
+# Telemetry and Logs
+logs/
+*.csv
+planet.dat
+planet.pid
+
+# AI and IDE specific files
+.claude/
+.claude
+.vscode/
+.idea/
