@@ -1,0 +1,2529 @@
+﻿==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\build\CMakeFiles\4.3.2\CompilerIdCXX\CMakeCXXCompilerId.cpp
+==================================================
+/* This source file must have a .cpp extension so that all C++ compilers
+   recognize the extension without flags.  Borland does not know .cxx for
+   example.  */
+#ifndef __cplusplus
+# error "A C compiler has been selected for C++."
+#endif
+
+#if !defined(__has_include)
+/* If the compiler does not have __has_include, pretend the answer is
+   always no.  */
+#  define __has_include(x) 0
+#endif
+
+
+/* Version number components: V=Version, R=Revision, P=Patch
+   Version date components:   YYYY=Year, MM=Month,   DD=Day  */
+
+#if defined(__INTEL_COMPILER) || defined(__ICC)
+# define COMPILER_ID "Intel"
+# if defined(_MSC_VER)
+#  define SIMULATE_ID "MSVC"
+# endif
+# if defined(__GNUC__)
+#  define SIMULATE_ID "GNU"
+# endif
+  /* __INTEL_COMPILER = VRP prior to 2021, and then VVVV for 2021 and later,
+     except that a few beta releases use the old format with V=2021.  */
+# if __INTEL_COMPILER < 2021 || __INTEL_COMPILER == 202110 || __INTEL_COMPILER == 202111
+#  define COMPILER_VERSION_MAJOR DEC(__INTEL_COMPILER/100)
+#  define COMPILER_VERSION_MINOR DEC(__INTEL_COMPILER/10 % 10)
+#  if defined(__INTEL_COMPILER_UPDATE)
+#   define COMPILER_VERSION_PATCH DEC(__INTEL_COMPILER_UPDATE)
+#  else
+#   define COMPILER_VERSION_PATCH DEC(__INTEL_COMPILER   % 10)
+#  endif
+# else
+#  define COMPILER_VERSION_MAJOR DEC(__INTEL_COMPILER)
+#  define COMPILER_VERSION_MINOR DEC(__INTEL_COMPILER_UPDATE)
+   /* The third version component from --version is an update index,
+      but no macro is provided for it.  */
+#  define COMPILER_VERSION_PATCH DEC(0)
+# endif
+# if defined(__INTEL_COMPILER_BUILD_DATE)
+   /* __INTEL_COMPILER_BUILD_DATE = YYYYMMDD */
+#  define COMPILER_VERSION_TWEAK DEC(__INTEL_COMPILER_BUILD_DATE)
+# endif
+# if defined(_MSC_VER)
+   /* _MSC_VER = VVRR */
+#  define SIMULATE_VERSION_MAJOR DEC(_MSC_VER / 100)
+#  define SIMULATE_VERSION_MINOR DEC(_MSC_VER % 100)
+# endif
+# if defined(__GNUC__)
+#  define SIMULATE_VERSION_MAJOR DEC(__GNUC__)
+# elif defined(__GNUG__)
+#  define SIMULATE_VERSION_MAJOR DEC(__GNUG__)
+# endif
+# if defined(__GNUC_MINOR__)
+#  define SIMULATE_VERSION_MINOR DEC(__GNUC_MINOR__)
+# endif
+# if defined(__GNUC_PATCHLEVEL__)
+#  define SIMULATE_VERSION_PATCH DEC(__GNUC_PATCHLEVEL__)
+# endif
+
+#elif (defined(__clang__) && defined(__INTEL_CLANG_COMPILER)) || defined(__INTEL_LLVM_COMPILER)
+# define COMPILER_ID "IntelLLVM"
+#if defined(_MSC_VER)
+# define SIMULATE_ID "MSVC"
+#endif
+#if defined(__GNUC__)
+# define SIMULATE_ID "GNU"
+#endif
+/* __INTEL_LLVM_COMPILER = VVVVRP prior to 2021.2.0, VVVVRRPP for 2021.2.0 and
+ * later.  Look for 6 digit vs. 8 digit version number to decide encoding.
+ * VVVV is no smaller than the current year when a version is released.
+ */
+#if __INTEL_LLVM_COMPILER < 1000000L
+# define COMPILER_VERSION_MAJOR DEC(__INTEL_LLVM_COMPILER/100)
+# define COMPILER_VERSION_MINOR DEC(__INTEL_LLVM_COMPILER/10 % 10)
+# define COMPILER_VERSION_PATCH DEC(__INTEL_LLVM_COMPILER    % 10)
+#else
+# define COMPILER_VERSION_MAJOR DEC(__INTEL_LLVM_COMPILER/10000)
+# define COMPILER_VERSION_MINOR DEC(__INTEL_LLVM_COMPILER/100 % 100)
+# define COMPILER_VERSION_PATCH DEC(__INTEL_LLVM_COMPILER     % 100)
+#endif
+#if defined(_MSC_VER)
+  /* _MSC_VER = VVRR */
+# define SIMULATE_VERSION_MAJOR DEC(_MSC_VER / 100)
+# define SIMULATE_VERSION_MINOR DEC(_MSC_VER % 100)
+#endif
+#if defined(__GNUC__)
+# define SIMULATE_VERSION_MAJOR DEC(__GNUC__)
+#elif defined(__GNUG__)
+# define SIMULATE_VERSION_MAJOR DEC(__GNUG__)
+#endif
+#if defined(__GNUC_MINOR__)
+# define SIMULATE_VERSION_MINOR DEC(__GNUC_MINOR__)
+#endif
+#if defined(__GNUC_PATCHLEVEL__)
+# define SIMULATE_VERSION_PATCH DEC(__GNUC_PATCHLEVEL__)
+#endif
+
+#elif defined(__PATHCC__)
+# define COMPILER_ID "PathScale"
+# define COMPILER_VERSION_MAJOR DEC(__PATHCC__)
+# define COMPILER_VERSION_MINOR DEC(__PATHCC_MINOR__)
+# if defined(__PATHCC_PATCHLEVEL__)
+#  define COMPILER_VERSION_PATCH DEC(__PATHCC_PATCHLEVEL__)
+# endif
+
+#elif defined(__BORLANDC__) && defined(__CODEGEARC_VERSION__)
+# define COMPILER_ID "Embarcadero"
+# define COMPILER_VERSION_MAJOR HEX(__CODEGEARC_VERSION__>>24 & 0x00FF)
+# define COMPILER_VERSION_MINOR HEX(__CODEGEARC_VERSION__>>16 & 0x00FF)
+# define COMPILER_VERSION_PATCH DEC(__CODEGEARC_VERSION__     & 0xFFFF)
+
+#elif defined(__BORLANDC__)
+# define COMPILER_ID "Borland"
+  /* __BORLANDC__ = 0xVRR */
+# define COMPILER_VERSION_MAJOR HEX(__BORLANDC__>>8)
+# define COMPILER_VERSION_MINOR HEX(__BORLANDC__ & 0xFF)
+
+#elif defined(__WATCOMC__) && __WATCOMC__ < 1200
+# define COMPILER_ID "Watcom"
+   /* __WATCOMC__ = VVRR */
+# define COMPILER_VERSION_MAJOR DEC(__WATCOMC__ / 100)
+# define COMPILER_VERSION_MINOR DEC((__WATCOMC__ / 10) % 10)
+# if (__WATCOMC__ % 10) > 0
+#  define COMPILER_VERSION_PATCH DEC(__WATCOMC__ % 10)
+# endif
+
+#elif defined(__WATCOMC__)
+# define COMPILER_ID "OpenWatcom"
+   /* __WATCOMC__ = VVRP + 1100 */
+# define COMPILER_VERSION_MAJOR DEC((__WATCOMC__ - 1100) / 100)
+# define COMPILER_VERSION_MINOR DEC((__WATCOMC__ / 10) % 10)
+# if (__WATCOMC__ % 10) > 0
+#  define COMPILER_VERSION_PATCH DEC(__WATCOMC__ % 10)
+# endif
+
+#elif defined(__SUNPRO_CC)
+# define COMPILER_ID "SunPro"
+# if __SUNPRO_CC >= 0x5100
+   /* __SUNPRO_CC = 0xVRRP */
+#  define COMPILER_VERSION_MAJOR HEX(__SUNPRO_CC>>12)
+#  define COMPILER_VERSION_MINOR HEX(__SUNPRO_CC>>4 & 0xFF)
+#  define COMPILER_VERSION_PATCH HEX(__SUNPRO_CC    & 0xF)
+# else
+   /* __SUNPRO_CC = 0xVRP */
+#  define COMPILER_VERSION_MAJOR HEX(__SUNPRO_CC>>8)
+#  define COMPILER_VERSION_MINOR HEX(__SUNPRO_CC>>4 & 0xF)
+#  define COMPILER_VERSION_PATCH HEX(__SUNPRO_CC    & 0xF)
+# endif
+
+#elif defined(__HP_aCC)
+# define COMPILER_ID "HP"
+  /* __HP_aCC = VVRRPP */
+# define COMPILER_VERSION_MAJOR DEC(__HP_aCC/10000)
+# define COMPILER_VERSION_MINOR DEC(__HP_aCC/100 % 100)
+# define COMPILER_VERSION_PATCH DEC(__HP_aCC     % 100)
+
+#elif defined(__DECCXX)
+# define COMPILER_ID "Compaq"
+  /* __DECCXX_VER = VVRRTPPPP */
+# define COMPILER_VERSION_MAJOR DEC(__DECCXX_VER/10000000)
+# define COMPILER_VERSION_MINOR DEC(__DECCXX_VER/100000  % 100)
+# define COMPILER_VERSION_PATCH DEC(__DECCXX_VER         % 10000)
+
+#elif defined(__IBMCPP__) && defined(__COMPILER_VER__)
+# define COMPILER_ID "zOS"
+  /* __IBMCPP__ = VRP */
+# define COMPILER_VERSION_MAJOR DEC(__IBMCPP__/100)
+# define COMPILER_VERSION_MINOR DEC(__IBMCPP__/10 % 10)
+# define COMPILER_VERSION_PATCH DEC(__IBMCPP__    % 10)
+
+#elif defined(__open_xl__) && defined(__clang__)
+# define COMPILER_ID "IBMClang"
+# define COMPILER_VERSION_MAJOR DEC(__open_xl_version__)
+# define COMPILER_VERSION_MINOR DEC(__open_xl_release__)
+# define COMPILER_VERSION_PATCH DEC(__open_xl_modification__)
+# define COMPILER_VERSION_TWEAK DEC(__open_xl_ptf_fix_level__)
+# define COMPILER_VERSION_INTERNAL_STR  __clang_version__
+
+
+#elif defined(__ibmxl__) && defined(__clang__)
+# define COMPILER_ID "XLClang"
+# define COMPILER_VERSION_MAJOR DEC(__ibmxl_version__)
+# define COMPILER_VERSION_MINOR DEC(__ibmxl_release__)
+# define COMPILER_VERSION_PATCH DEC(__ibmxl_modification__)
+# define COMPILER_VERSION_TWEAK DEC(__ibmxl_ptf_fix_level__)
+
+
+#elif defined(__IBMCPP__) && !defined(__COMPILER_VER__) && __IBMCPP__ >= 800
+# define COMPILER_ID "XL"
+  /* __IBMCPP__ = VRP */
+# define COMPILER_VERSION_MAJOR DEC(__IBMCPP__/100)
+# define COMPILER_VERSION_MINOR DEC(__IBMCPP__/10 % 10)
+# define COMPILER_VERSION_PATCH DEC(__IBMCPP__    % 10)
+
+#elif defined(__IBMCPP__) && !defined(__COMPILER_VER__) && __IBMCPP__ < 800
+# define COMPILER_ID "VisualAge"
+  /* __IBMCPP__ = VRP */
+# define COMPILER_VERSION_MAJOR DEC(__IBMCPP__/100)
+# define COMPILER_VERSION_MINOR DEC(__IBMCPP__/10 % 10)
+# define COMPILER_VERSION_PATCH DEC(__IBMCPP__    % 10)
+
+#elif defined(__NVCOMPILER)
+# define COMPILER_ID "NVHPC"
+# define COMPILER_VERSION_MAJOR DEC(__NVCOMPILER_MAJOR__)
+# define COMPILER_VERSION_MINOR DEC(__NVCOMPILER_MINOR__)
+# if defined(__NVCOMPILER_PATCHLEVEL__)
+#  define COMPILER_VERSION_PATCH DEC(__NVCOMPILER_PATCHLEVEL__)
+# endif
+
+#elif defined(__PGI)
+# define COMPILER_ID "PGI"
+# define COMPILER_VERSION_MAJOR DEC(__PGIC__)
+# define COMPILER_VERSION_MINOR DEC(__PGIC_MINOR__)
+# if defined(__PGIC_PATCHLEVEL__)
+#  define COMPILER_VERSION_PATCH DEC(__PGIC_PATCHLEVEL__)
+# endif
+
+#elif defined(__clang__) && defined(__cray__)
+# define COMPILER_ID "CrayClang"
+# define COMPILER_VERSION_MAJOR DEC(__cray_major__)
+# define COMPILER_VERSION_MINOR DEC(__cray_minor__)
+# define COMPILER_VERSION_PATCH DEC(__cray_patchlevel__)
+# define COMPILER_VERSION_INTERNAL_STR __clang_version__
+
+
+#elif defined(_CRAYC)
+# define COMPILER_ID "Cray"
+# define COMPILER_VERSION_MAJOR DEC(_RELEASE_MAJOR)
+# define COMPILER_VERSION_MINOR DEC(_RELEASE_MINOR)
+
+#elif defined(__TI_COMPILER_VERSION__)
+# define COMPILER_ID "TI"
+  /* __TI_COMPILER_VERSION__ = VVVRRRPPP */
+# define COMPILER_VERSION_MAJOR DEC(__TI_COMPILER_VERSION__/1000000)
+# define COMPILER_VERSION_MINOR DEC(__TI_COMPILER_VERSION__/1000   % 1000)
+# define COMPILER_VERSION_PATCH DEC(__TI_COMPILER_VERSION__        % 1000)
+
+#elif defined(__CLANG_FUJITSU)
+# define COMPILER_ID "FujitsuClang"
+# define COMPILER_VERSION_MAJOR DEC(__FCC_major__)
+# define COMPILER_VERSION_MINOR DEC(__FCC_minor__)
+# define COMPILER_VERSION_PATCH DEC(__FCC_patchlevel__)
+# define COMPILER_VERSION_INTERNAL_STR __clang_version__
+
+
+#elif defined(__FUJITSU)
+# define COMPILER_ID "Fujitsu"
+# if defined(__FCC_version__)
+#   define COMPILER_VERSION __FCC_version__
+# elif defined(__FCC_major__)
+#   define COMPILER_VERSION_MAJOR DEC(__FCC_major__)
+#   define COMPILER_VERSION_MINOR DEC(__FCC_minor__)
+#   define COMPILER_VERSION_PATCH DEC(__FCC_patchlevel__)
+# endif
+# if defined(__fcc_version)
+#   define COMPILER_VERSION_INTERNAL DEC(__fcc_version)
+# elif defined(__FCC_VERSION)
+#   define COMPILER_VERSION_INTERNAL DEC(__FCC_VERSION)
+# endif
+
+
+#elif defined(__ghs__)
+# define COMPILER_ID "GHS"
+/* __GHS_VERSION_NUMBER = VVVVRP */
+# ifdef __GHS_VERSION_NUMBER
+# define COMPILER_VERSION_MAJOR DEC(__GHS_VERSION_NUMBER / 100)
+# define COMPILER_VERSION_MINOR DEC(__GHS_VERSION_NUMBER / 10 % 10)
+# define COMPILER_VERSION_PATCH DEC(__GHS_VERSION_NUMBER      % 10)
+# endif
+
+#elif defined(__TASKING__)
+# define COMPILER_ID "Tasking"
+  # define COMPILER_VERSION_MAJOR DEC(__VERSION__/1000)
+  # define COMPILER_VERSION_MINOR DEC(__VERSION__ % 100)
+# define COMPILER_VERSION_INTERNAL DEC(__VERSION__)
+
+#elif defined(__ORANGEC__)
+# define COMPILER_ID "OrangeC"
+# define COMPILER_VERSION_MAJOR DEC(__ORANGEC_MAJOR__)
+# define COMPILER_VERSION_MINOR DEC(__ORANGEC_MINOR__)
+# define COMPILER_VERSION_PATCH DEC(__ORANGEC_PATCHLEVEL__)
+
+#elif defined(__RENESAS__)
+# define COMPILER_ID "Renesas"
+/* __RENESAS_VERSION__ = 0xVVRRPP00 */
+# define COMPILER_VERSION_MAJOR HEX(__RENESAS_VERSION__ >> 24 & 0xFF)
+# define COMPILER_VERSION_MINOR HEX(__RENESAS_VERSION__ >> 16 & 0xFF)
+# define COMPILER_VERSION_PATCH HEX(__RENESAS_VERSION__ >> 8  & 0xFF)
+
+#elif defined(__SCO_VERSION__)
+# define COMPILER_ID "SCO"
+
+#elif defined(__ARMCC_VERSION) && !defined(__clang__)
+# define COMPILER_ID "ARMCC"
+#if __ARMCC_VERSION >= 1000000
+  /* __ARMCC_VERSION = VRRPPPP */
+  # define COMPILER_VERSION_MAJOR DEC(__ARMCC_VERSION/1000000)
+  # define COMPILER_VERSION_MINOR DEC(__ARMCC_VERSION/10000 % 100)
+  # define COMPILER_VERSION_PATCH DEC(__ARMCC_VERSION     % 10000)
+#else
+  /* __ARMCC_VERSION = VRPPPP */
+  # define COMPILER_VERSION_MAJOR DEC(__ARMCC_VERSION/100000)
+  # define COMPILER_VERSION_MINOR DEC(__ARMCC_VERSION/10000 % 10)
+  # define COMPILER_VERSION_PATCH DEC(__ARMCC_VERSION    % 10000)
+#endif
+
+
+#elif defined(__clang__) && defined(__apple_build_version__)
+# define COMPILER_ID "AppleClang"
+# if defined(_MSC_VER)
+#  define SIMULATE_ID "MSVC"
+# endif
+# define COMPILER_VERSION_MAJOR DEC(__clang_major__)
+# define COMPILER_VERSION_MINOR DEC(__clang_minor__)
+# define COMPILER_VERSION_PATCH DEC(__clang_patchlevel__)
+# if defined(_MSC_VER)
+   /* _MSC_VER = VVRR */
+#  define SIMULATE_VERSION_MAJOR DEC(_MSC_VER / 100)
+#  define SIMULATE_VERSION_MINOR DEC(_MSC_VER % 100)
+# endif
+# define COMPILER_VERSION_TWEAK DEC(__apple_build_version__)
+
+#elif defined(__clang__) && defined(__ARMCOMPILER_VERSION)
+# define COMPILER_ID "ARMClang"
+  # define COMPILER_VERSION_MAJOR DEC(__ARMCOMPILER_VERSION/1000000)
+  # define COMPILER_VERSION_MINOR DEC(__ARMCOMPILER_VERSION/10000 % 100)
+  # define COMPILER_VERSION_PATCH DEC(__ARMCOMPILER_VERSION/100   % 100)
+# define COMPILER_VERSION_INTERNAL DEC(__ARMCOMPILER_VERSION)
+
+#elif defined(__clang__) && defined(__ti__)
+# define COMPILER_ID "TIClang"
+  # define COMPILER_VERSION_MAJOR DEC(__ti_major__)
+  # define COMPILER_VERSION_MINOR DEC(__ti_minor__)
+  # define COMPILER_VERSION_PATCH DEC(__ti_patchlevel__)
+# define COMPILER_VERSION_INTERNAL DEC(__ti_version__)
+
+#elif defined(__clang__)
+# define COMPILER_ID "Clang"
+# if defined(_MSC_VER)
+#  define SIMULATE_ID "MSVC"
+# endif
+# define COMPILER_VERSION_MAJOR DEC(__clang_major__)
+# define COMPILER_VERSION_MINOR DEC(__clang_minor__)
+# define COMPILER_VERSION_PATCH DEC(__clang_patchlevel__)
+# if defined(_MSC_VER)
+   /* _MSC_VER = VVRR */
+#  define SIMULATE_VERSION_MAJOR DEC(_MSC_VER / 100)
+#  define SIMULATE_VERSION_MINOR DEC(_MSC_VER % 100)
+# endif
+
+#elif defined(__LCC__) && (defined(__GNUC__) || defined(__GNUG__) || defined(__MCST__))
+# define COMPILER_ID "LCC"
+# define COMPILER_VERSION_MAJOR DEC(__LCC__ / 100)
+# define COMPILER_VERSION_MINOR DEC(__LCC__ % 100)
+# if defined(__LCC_MINOR__)
+#  define COMPILER_VERSION_PATCH DEC(__LCC_MINOR__)
+# endif
+# if defined(__GNUC__) && defined(__GNUC_MINOR__)
+#  define SIMULATE_ID "GNU"
+#  define SIMULATE_VERSION_MAJOR DEC(__GNUC__)
+#  define SIMULATE_VERSION_MINOR DEC(__GNUC_MINOR__)
+#  if defined(__GNUC_PATCHLEVEL__)
+#   define SIMULATE_VERSION_PATCH DEC(__GNUC_PATCHLEVEL__)
+#  endif
+# endif
+
+#elif defined(__GNUC__) || defined(__GNUG__)
+# define COMPILER_ID "GNU"
+# if defined(__GNUC__)
+#  define COMPILER_VERSION_MAJOR DEC(__GNUC__)
+# else
+#  define COMPILER_VERSION_MAJOR DEC(__GNUG__)
+# endif
+# if defined(__GNUC_MINOR__)
+#  define COMPILER_VERSION_MINOR DEC(__GNUC_MINOR__)
+# endif
+# if defined(__GNUC_PATCHLEVEL__)
+#  define COMPILER_VERSION_PATCH DEC(__GNUC_PATCHLEVEL__)
+# endif
+
+#elif defined(_MSC_VER)
+# define COMPILER_ID "MSVC"
+  /* _MSC_VER = VVRR */
+# define COMPILER_VERSION_MAJOR DEC(_MSC_VER / 100)
+# define COMPILER_VERSION_MINOR DEC(_MSC_VER % 100)
+# if defined(_MSC_FULL_VER)
+#  if _MSC_VER >= 1400
+    /* _MSC_FULL_VER = VVRRPPPPP */
+#   define COMPILER_VERSION_PATCH DEC(_MSC_FULL_VER % 100000)
+#  else
+    /* _MSC_FULL_VER = VVRRPPPP */
+#   define COMPILER_VERSION_PATCH DEC(_MSC_FULL_VER % 10000)
+#  endif
+# endif
+# if defined(_MSC_BUILD)
+#  define COMPILER_VERSION_TWEAK DEC(_MSC_BUILD)
+# endif
+
+#elif defined(_ADI_COMPILER)
+# define COMPILER_ID "ADSP"
+#if defined(__VERSIONNUM__)
+  /* __VERSIONNUM__ = 0xVVRRPPTT */
+#  define COMPILER_VERSION_MAJOR DEC(__VERSIONNUM__ >> 24 & 0xFF)
+#  define COMPILER_VERSION_MINOR DEC(__VERSIONNUM__ >> 16 & 0xFF)
+#  define COMPILER_VERSION_PATCH DEC(__VERSIONNUM__ >> 8 & 0xFF)
+#  define COMPILER_VERSION_TWEAK DEC(__VERSIONNUM__ & 0xFF)
+#endif
+
+#elif defined(__IAR_SYSTEMS_ICC__) || defined(__IAR_SYSTEMS_ICC)
+# define COMPILER_ID "IAR"
+# if defined(__VER__) && defined(__ICCARM__)
+#  define COMPILER_VERSION_MAJOR DEC((__VER__) / 1000000)
+#  define COMPILER_VERSION_MINOR DEC(((__VER__) / 1000) % 1000)
+#  define COMPILER_VERSION_PATCH DEC((__VER__) % 1000)
+#  define COMPILER_VERSION_INTERNAL DEC(__IAR_SYSTEMS_ICC__)
+# elif defined(__VER__) && (defined(__ICCAVR__) || defined(__ICCRX__) || defined(__ICCRH850__) || defined(__ICCRL78__) || defined(__ICC430__) || defined(__ICCRISCV__) || defined(__ICCV850__) || defined(__ICC8051__) || defined(__ICCSTM8__))
+#  define COMPILER_VERSION_MAJOR DEC((__VER__) / 100)
+#  define COMPILER_VERSION_MINOR DEC((__VER__) - (((__VER__) / 100)*100))
+#  define COMPILER_VERSION_PATCH DEC(__SUBVERSION__)
+#  define COMPILER_VERSION_INTERNAL DEC(__IAR_SYSTEMS_ICC__)
+# endif
+
+#elif defined(__DCC__) && defined(_DIAB_TOOL)
+# define COMPILER_ID "Diab"
+  # define COMPILER_VERSION_MAJOR DEC(__VERSION_MAJOR_NUMBER__)
+  # define COMPILER_VERSION_MINOR DEC(__VERSION_MINOR_NUMBER__)
+  # define COMPILER_VERSION_PATCH DEC(__VERSION_ARCH_FEATURE_NUMBER__)
+  # define COMPILER_VERSION_TWEAK DEC(__VERSION_BUG_FIX_NUMBER__)
+
+
+
+/* These compilers are either not known or too old to define an
+  identification macro.  Try to identify the platform and guess that
+  it is the native compiler.  */
+#elif defined(__hpux) || defined(__hpua)
+# define COMPILER_ID "HP"
+
+#else /* unknown compiler */
+# define COMPILER_ID ""
+#endif
+
+/* Construct the string literal in pieces to prevent the source from
+   getting matched.  Store it in a pointer rather than an array
+   because some compilers will just produce instructions to fill the
+   array rather than assigning a pointer to a static array.  */
+char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";
+#ifdef SIMULATE_ID
+char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";
+#endif
+
+#ifdef __QNXNTO__
+char const* qnxnto = "INFO" ":" "qnxnto[]";
+#endif
+
+#if defined(__CRAYXT_COMPUTE_LINUX_TARGET)
+char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";
+#endif
+
+#define STRINGIFY_HELPER(X) #X
+#define STRINGIFY(X) STRINGIFY_HELPER(X)
+
+/* Identify known platforms by name.  */
+#if defined(__linux) || defined(__linux__) || defined(linux)
+# define PLATFORM_ID "Linux"
+
+#elif defined(__MSYS__)
+# define PLATFORM_ID "MSYS"
+
+#elif defined(__CYGWIN__)
+# define PLATFORM_ID "Cygwin"
+
+#elif defined(__MINGW32__)
+# define PLATFORM_ID "MinGW"
+
+#elif defined(__APPLE__)
+# define PLATFORM_ID "Darwin"
+
+#elif defined(_WIN32) || defined(__WIN32__) || defined(WIN32)
+# define PLATFORM_ID "Windows"
+
+#elif defined(__FreeBSD__) || defined(__FreeBSD)
+# define PLATFORM_ID "FreeBSD"
+
+#elif defined(__NetBSD__) || defined(__NetBSD)
+# define PLATFORM_ID "NetBSD"
+
+#elif defined(__OpenBSD__) || defined(__OPENBSD)
+# define PLATFORM_ID "OpenBSD"
+
+#elif defined(__sun) || defined(sun)
+# define PLATFORM_ID "SunOS"
+
+#elif defined(_AIX) || defined(__AIX) || defined(__AIX__) || defined(__aix) || defined(__aix__)
+# define PLATFORM_ID "AIX"
+
+#elif defined(__hpux) || defined(__hpux__)
+# define PLATFORM_ID "HP-UX"
+
+#elif defined(__HAIKU__)
+# define PLATFORM_ID "Haiku"
+
+#elif defined(__BeOS) || defined(__BEOS__) || defined(_BEOS)
+# define PLATFORM_ID "BeOS"
+
+#elif defined(__QNX__) || defined(__QNXNTO__)
+# define PLATFORM_ID "QNX"
+
+#elif defined(__tru64) || defined(_tru64) || defined(__TRU64__)
+# define PLATFORM_ID "Tru64"
+
+#elif defined(__riscos) || defined(__riscos__)
+# define PLATFORM_ID "RISCos"
+
+#elif defined(__sinix) || defined(__sinix__) || defined(__SINIX__)
+# define PLATFORM_ID "SINIX"
+
+#elif defined(__UNIX_SV__)
+# define PLATFORM_ID "UNIX_SV"
+
+#elif defined(__bsdos__)
+# define PLATFORM_ID "BSDOS"
+
+#elif defined(_MPRAS) || defined(MPRAS)
+# define PLATFORM_ID "MP-RAS"
+
+#elif defined(__osf) || defined(__osf__)
+# define PLATFORM_ID "OSF1"
+
+#elif defined(_SCO_SV) || defined(SCO_SV) || defined(sco_sv)
+# define PLATFORM_ID "SCO_SV"
+
+#elif defined(__ultrix) || defined(__ultrix__) || defined(_ULTRIX)
+# define PLATFORM_ID "ULTRIX"
+
+#elif defined(__XENIX__) || defined(_XENIX) || defined(XENIX)
+# define PLATFORM_ID "Xenix"
+
+#elif defined(__WATCOMC__)
+# if defined(__LINUX__)
+#  define PLATFORM_ID "Linux"
+
+# elif defined(__DOS__)
+#  define PLATFORM_ID "DOS"
+
+# elif defined(__OS2__)
+#  define PLATFORM_ID "OS2"
+
+# elif defined(__WINDOWS__)
+#  define PLATFORM_ID "Windows3x"
+
+# elif defined(__VXWORKS__)
+#  define PLATFORM_ID "VxWorks"
+
+# else /* unknown platform */
+#  define PLATFORM_ID
+# endif
+
+#elif defined(__INTEGRITY)
+# if defined(INT_178B)
+#  define PLATFORM_ID "Integrity178"
+
+# else /* regular Integrity */
+#  define PLATFORM_ID "Integrity"
+# endif
+
+# elif defined(_ADI_COMPILER)
+#  define PLATFORM_ID "ADSP"
+
+#else /* unknown platform */
+# define PLATFORM_ID
+
+#endif
+
+/* For windows compilers MSVC and Intel we can determine
+   the architecture of the compiler being used.  This is because
+   the compilers do not have flags that can change the architecture,
+   but rather depend on which compiler is being used
+*/
+#if defined(_WIN32) && defined(_MSC_VER)
+# if defined(_M_IA64)
+#  define ARCHITECTURE_ID "IA64"
+
+# elif defined(_M_ARM64EC)
+#  define ARCHITECTURE_ID "ARM64EC"
+
+# elif defined(_M_X64) || defined(_M_AMD64)
+#  define ARCHITECTURE_ID "x64"
+
+# elif defined(_M_IX86)
+#  define ARCHITECTURE_ID "X86"
+
+# elif defined(_M_ARM64)
+#  define ARCHITECTURE_ID "ARM64"
+
+# elif defined(_M_ARM)
+#  if _M_ARM == 4
+#   define ARCHITECTURE_ID "ARMV4I"
+#  elif _M_ARM == 5
+#   define ARCHITECTURE_ID "ARMV5I"
+#  else
+#   define ARCHITECTURE_ID "ARMV" STRINGIFY(_M_ARM)
+#  endif
+
+# elif defined(_M_MIPS)
+#  define ARCHITECTURE_ID "MIPS"
+
+# elif defined(_M_SH)
+#  define ARCHITECTURE_ID "SHx"
+
+# else /* unknown architecture */
+#  define ARCHITECTURE_ID ""
+# endif
+
+#elif defined(__WATCOMC__)
+# if defined(_M_I86)
+#  define ARCHITECTURE_ID "I86"
+
+# elif defined(_M_IX86)
+#  define ARCHITECTURE_ID "X86"
+
+# else /* unknown architecture */
+#  define ARCHITECTURE_ID ""
+# endif
+
+#elif defined(__IAR_SYSTEMS_ICC__) || defined(__IAR_SYSTEMS_ICC)
+# if defined(__ICCARM__)
+#  define ARCHITECTURE_ID "ARM"
+
+# elif defined(__ICCRX__)
+#  define ARCHITECTURE_ID "RX"
+
+# elif defined(__ICCRH850__)
+#  define ARCHITECTURE_ID "RH850"
+
+# elif defined(__ICCRL78__)
+#  define ARCHITECTURE_ID "RL78"
+
+# elif defined(__ICCRISCV__)
+#  define ARCHITECTURE_ID "RISCV"
+
+# elif defined(__ICCAVR__)
+#  define ARCHITECTURE_ID "AVR"
+
+# elif defined(__ICC430__)
+#  define ARCHITECTURE_ID "MSP430"
+
+# elif defined(__ICCV850__)
+#  define ARCHITECTURE_ID "V850"
+
+# elif defined(__ICC8051__)
+#  define ARCHITECTURE_ID "8051"
+
+# elif defined(__ICCSTM8__)
+#  define ARCHITECTURE_ID "STM8"
+
+# else /* unknown architecture */
+#  define ARCHITECTURE_ID ""
+# endif
+
+#elif defined(__ghs__)
+# if defined(__PPC64__)
+#  define ARCHITECTURE_ID "PPC64"
+
+# elif defined(__ppc__)
+#  define ARCHITECTURE_ID "PPC"
+
+# elif defined(__ARM__)
+#  define ARCHITECTURE_ID "ARM"
+
+# elif defined(__x86_64__)
+#  define ARCHITECTURE_ID "x64"
+
+# elif defined(__i386__)
+#  define ARCHITECTURE_ID "X86"
+
+# else /* unknown architecture */
+#  define ARCHITECTURE_ID ""
+# endif
+
+#elif defined(__clang__) && defined(__ti__)
+# if defined(__ARM_ARCH)
+#  define ARCHITECTURE_ID "ARM"
+
+# else /* unknown architecture */
+#  define ARCHITECTURE_ID ""
+# endif
+
+#elif defined(__TI_COMPILER_VERSION__)
+# if defined(__TI_ARM__)
+#  define ARCHITECTURE_ID "ARM"
+
+# elif defined(__MSP430__)
+#  define ARCHITECTURE_ID "MSP430"
+
+# elif defined(__TMS320C28XX__)
+#  define ARCHITECTURE_ID "TMS320C28x"
+
+# elif defined(__TMS320C6X__) || defined(_TMS320C6X)
+#  define ARCHITECTURE_ID "TMS320C6x"
+
+# else /* unknown architecture */
+#  define ARCHITECTURE_ID ""
+# endif
+
+# elif defined(__ADSPSHARC__)
+#  define ARCHITECTURE_ID "SHARC"
+
+# elif defined(__ADSPBLACKFIN__)
+#  define ARCHITECTURE_ID "Blackfin"
+
+#elif defined(__TASKING__)
+
+# if defined(__CTC__) || defined(__CPTC__)
+#  define ARCHITECTURE_ID "TriCore"
+
+# elif defined(__CMCS__)
+#  define ARCHITECTURE_ID "MCS"
+
+# elif defined(__CARM__) || defined(__CPARM__)
+#  define ARCHITECTURE_ID "ARM"
+
+# elif defined(__CARC__)
+#  define ARCHITECTURE_ID "ARC"
+
+# elif defined(__C51__)
+#  define ARCHITECTURE_ID "8051"
+
+# elif defined(__CPCP__)
+#  define ARCHITECTURE_ID "PCP"
+
+# else
+#  define ARCHITECTURE_ID ""
+# endif
+
+#elif defined(__RENESAS__)
+# if defined(__CCRX__)
+#  define ARCHITECTURE_ID "RX"
+
+# elif defined(__CCRL__)
+#  define ARCHITECTURE_ID "RL78"
+
+# elif defined(__CCRH__)
+#  define ARCHITECTURE_ID "RH850"
+
+# else
+#  define ARCHITECTURE_ID ""
+# endif
+
+#else
+#  define ARCHITECTURE_ID
+#endif
+
+/* Convert integer to decimal digit literals.  */
+#define DEC(n)                   \
+  ('0' + (((n) / 10000000)%10)), \
+  ('0' + (((n) / 1000000)%10)),  \
+  ('0' + (((n) / 100000)%10)),   \
+  ('0' + (((n) / 10000)%10)),    \
+  ('0' + (((n) / 1000)%10)),     \
+  ('0' + (((n) / 100)%10)),      \
+  ('0' + (((n) / 10)%10)),       \
+  ('0' +  ((n) % 10))
+
+/* Convert integer to hex digit literals.  */
+#define HEX(n)             \
+  ('0' + ((n)>>28 & 0xF)), \
+  ('0' + ((n)>>24 & 0xF)), \
+  ('0' + ((n)>>20 & 0xF)), \
+  ('0' + ((n)>>16 & 0xF)), \
+  ('0' + ((n)>>12 & 0xF)), \
+  ('0' + ((n)>>8  & 0xF)), \
+  ('0' + ((n)>>4  & 0xF)), \
+  ('0' + ((n)     & 0xF))
+
+/* Construct a string literal encoding the version number. */
+#ifdef COMPILER_VERSION
+char const* info_version = "INFO" ":" "compiler_version[" COMPILER_VERSION "]";
+
+/* Construct a string literal encoding the version number components. */
+#elif defined(COMPILER_VERSION_MAJOR)
+char const info_version[] = {
+  'I', 'N', 'F', 'O', ':',
+  'c','o','m','p','i','l','e','r','_','v','e','r','s','i','o','n','[',
+  COMPILER_VERSION_MAJOR,
+# ifdef COMPILER_VERSION_MINOR
+  '.', COMPILER_VERSION_MINOR,
+#  ifdef COMPILER_VERSION_PATCH
+   '.', COMPILER_VERSION_PATCH,
+#   ifdef COMPILER_VERSION_TWEAK
+    '.', COMPILER_VERSION_TWEAK,
+#   endif
+#  endif
+# endif
+  ']','\0'};
+#endif
+
+/* Construct a string literal encoding the internal version number. */
+#ifdef COMPILER_VERSION_INTERNAL
+char const info_version_internal[] = {
+  'I', 'N', 'F', 'O', ':',
+  'c','o','m','p','i','l','e','r','_','v','e','r','s','i','o','n','_',
+  'i','n','t','e','r','n','a','l','[',
+  COMPILER_VERSION_INTERNAL,']','\0'};
+#elif defined(COMPILER_VERSION_INTERNAL_STR)
+char const* info_version_internal = "INFO" ":" "compiler_version_internal[" COMPILER_VERSION_INTERNAL_STR "]";
+#endif
+
+/* Construct a string literal encoding the version number components. */
+#ifdef SIMULATE_VERSION_MAJOR
+char const info_simulate_version[] = {
+  'I', 'N', 'F', 'O', ':',
+  's','i','m','u','l','a','t','e','_','v','e','r','s','i','o','n','[',
+  SIMULATE_VERSION_MAJOR,
+# ifdef SIMULATE_VERSION_MINOR
+  '.', SIMULATE_VERSION_MINOR,
+#  ifdef SIMULATE_VERSION_PATCH
+   '.', SIMULATE_VERSION_PATCH,
+#   ifdef SIMULATE_VERSION_TWEAK
+    '.', SIMULATE_VERSION_TWEAK,
+#   endif
+#  endif
+# endif
+  ']','\0'};
+#endif
+
+/* Construct the string literal in pieces to prevent the source from
+   getting matched.  Store it in a pointer rather than an array
+   because some compilers will just produce instructions to fill the
+   array rather than assigning a pointer to a static array.  */
+char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";
+char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";
+
+
+
+#define CXX_STD_98 199711L
+#define CXX_STD_11 201103L
+#define CXX_STD_14 201402L
+#define CXX_STD_17 201703L
+#define CXX_STD_20 202002L
+#define CXX_STD_23 202302L
+
+#if defined(__INTEL_COMPILER) && defined(_MSVC_LANG)
+#  if _MSVC_LANG > CXX_STD_17
+#    define CXX_STD _MSVC_LANG
+#  elif _MSVC_LANG == CXX_STD_17 && defined(__cpp_aggregate_paren_init)
+#    define CXX_STD CXX_STD_20
+#  elif _MSVC_LANG > CXX_STD_14 && __cplusplus > CXX_STD_17
+#    define CXX_STD CXX_STD_20
+#  elif _MSVC_LANG > CXX_STD_14
+#    define CXX_STD CXX_STD_17
+#  elif defined(__INTEL_CXX11_MODE__) && defined(__cpp_aggregate_nsdmi)
+#    define CXX_STD CXX_STD_14
+#  elif defined(__INTEL_CXX11_MODE__)
+#    define CXX_STD CXX_STD_11
+#  else
+#    define CXX_STD CXX_STD_98
+#  endif
+#elif defined(_MSC_VER) && defined(_MSVC_LANG)
+#  if _MSVC_LANG > __cplusplus
+#    define CXX_STD _MSVC_LANG
+#  else
+#    define CXX_STD __cplusplus
+#  endif
+#elif defined(__NVCOMPILER)
+#  if __cplusplus == CXX_STD_17 && defined(__cpp_aggregate_paren_init)
+#    define CXX_STD CXX_STD_20
+#  else
+#    define CXX_STD __cplusplus
+#  endif
+#elif defined(__INTEL_COMPILER) || defined(__PGI)
+#  if __cplusplus == CXX_STD_11 && defined(__cpp_namespace_attributes)
+#    define CXX_STD CXX_STD_17
+#  elif __cplusplus == CXX_STD_11 && defined(__cpp_aggregate_nsdmi)
+#    define CXX_STD CXX_STD_14
+#  else
+#    define CXX_STD __cplusplus
+#  endif
+#elif (defined(__IBMCPP__) || defined(__ibmxl__)) && defined(__linux__)
+#  if __cplusplus == CXX_STD_11 && defined(__cpp_aggregate_nsdmi)
+#    define CXX_STD CXX_STD_14
+#  else
+#    define CXX_STD __cplusplus
+#  endif
+#elif __cplusplus == 1 && defined(__GXX_EXPERIMENTAL_CXX0X__)
+#  define CXX_STD CXX_STD_11
+#else
+#  define CXX_STD __cplusplus
+#endif
+
+const char* info_language_standard_default = "INFO" ":" "standard_default["
+#if CXX_STD > CXX_STD_23
+  "26"
+#elif CXX_STD > CXX_STD_20
+  "23"
+#elif CXX_STD > CXX_STD_17
+  "20"
+#elif CXX_STD > CXX_STD_14
+  "17"
+#elif CXX_STD > CXX_STD_11
+  "14"
+#elif CXX_STD >= CXX_STD_11
+  "11"
+#else
+  "98"
+#endif
+"]";
+
+const char* info_language_extensions_default = "INFO" ":" "extensions_default["
+#if (defined(__clang__) || defined(__GNUC__) || defined(__xlC__) ||           \
+     defined(__TI_COMPILER_VERSION__) || defined(__RENESAS__)) &&             \
+  !defined(__STRICT_ANSI__)
+  "ON"
+#else
+  "OFF"
+#endif
+"]";
+
+/*--------------------------------------------------------------------------*/
+
+int main(int argc, char* argv[])
+{
+  int require = 0;
+  require += info_compiler[argc];
+  require += info_platform[argc];
+  require += info_arch[argc];
+#ifdef COMPILER_VERSION_MAJOR
+  require += info_version[argc];
+#endif
+#if defined(COMPILER_VERSION_INTERNAL) || defined(COMPILER_VERSION_INTERNAL_STR)
+  require += info_version_internal[argc];
+#endif
+#ifdef SIMULATE_ID
+  require += info_simulate[argc];
+#endif
+#ifdef SIMULATE_VERSION_MAJOR
+  require += info_simulate_version[argc];
+#endif
+#if defined(__CRAYXT_COMPUTE_LINUX_TARGET)
+  require += info_cray[argc];
+#endif
+  require += info_language_standard_default[argc];
+  require += info_language_extensions_default[argc];
+  (void)argv;
+  return require;
+}
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\include\Config.hpp
+==================================================
+// Config file for the server
+#pragma once
+#include <cstdint>
+#include <iostream>
+#include <fstream>
+#ifdef _WIN32
+    #include <winsock2.h>
+    #include <ws2tcpip.h>
+    #define NET_ERR_ADDRINUSE WSAEADDRINUSE
+    #define NET_ERR_WOULDBLOCK WSAEWOULDBLOCK
+    #define CAST_SOCKOPT(x) (const char*)(x)
+    #define GET_PID() GetCurrentProcessId()
+    #pragma comment(lib, "ws2_32.lib")
+#else
+    #include <fcntl.h>
+    #include <sys/socket.h>
+    #include <arpa/inet.h>
+    #include <cerrono>
+    #include <sys/mman.h>
+    #include <fcntl.h>
+    #include <uinistd.h>
+    #define NET_ERR_ADDRINUSE EADDRINUSE
+    #define NET_ERR_WOULDBLOCK EWOULDBLOCK
+    #define CAST_SOCKOPT(x) (const void*)(x)
+    #define GET_PID() getpid()
+    typedef int SOCKET;
+    #define INVALID_SOCKET -1
+    #define SOCKET_ERROR -1
+    #define closesocket(s) close(s)
+    inline int NET_ERROR() 
+    {
+        return errno;
+    }
+#endif
+#include <thread>
+
+namespace Config 
+{
+
+    // API Versioning: WinSock 2.2
+    const uint8_t WINSOCK_MAJOR_VERISON = 2;
+    const uint8_t WINSOCK_MINOR_VERSION = 2;
+
+    // Networking Constant
+    const uint16_t DEFAULT_PORT = 8080;
+
+    // SOMAXCONN provides the maximum queue length allowed by OS
+    const int MAX_CONNECTIONS = SOMAXCONN;
+
+    // Data handling
+    const size_t BUFFER_SIZE = 4096;
+    const size_t QUEUE_SIZE = 5000;
+
+    // Concurrency: Scales dynamically to the host's CPU core count
+    const size_t THREAD_POOL_SIZE = std::thread::hardware_concurrency();
+
+    // Path to file where process ID to be stored
+    constexpr const char* PID_FILE_PATH = "../planet.pid";
+} 
+
+#ifdef _WIN32
+    inline void INIT_WINSOCK() 
+    {
+        WSADATA wsaData;
+        int startup_result = WSAStartup(MAKEWORD(Config::WINSOCK_MAJOR_VERISON, Config::WINSOCK_MINOR_VERSION), &wsaData);
+        if (startup_result != 0) 
+        {
+            std::cerr << "WSAStartup failed with error: " 
+                      << startup_result << std::endl;
+            throw std::runtime_error("Failed to initialize Winsock");
+        }
+    }
+    inline void CLEANUP_WINSOCK() 
+    {
+        WSACleanup();
+    }
+    inline int NET_ERROR() 
+    {
+        return WSAGetLastError();
+    }
+    inline void MAKE_SOCKET_NON_BLOCKING(SOCKET s)
+    {
+        u_long mode = 1;
+        ioctlsocket(s, FIONBIO, &mode);
+    }
+    
+#else
+    inline void INIT_WINSOCK() 
+    {
+        // No initialization needed on Unix-like systems
+    }
+    inline void CLEANUP_WINSOCK() 
+    {
+        // No cleanup needed on Unix-like systems
+    }
+    inline void MAKE_SOCKET_NON_BLOCKING(SOCKET s)
+    {
+        int flags = fcntl(s, F_GETFL, 0);
+        fcntl(s, F_SETFL, flags | O_NONBLOCK);
+    }
+#endif
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\include\ConnectionHandler.hpp
+==================================================
+#pragma once
+
+#include <iostream>
+#include "Config.hpp"
+#include "Logger.hpp"
+
+// Manges lifecycle of a single client connection
+// Responsible for reading newtowrk butter, routing the file request, and sending HTTP responses
+class ConnectionHandler
+{
+    private:
+        SOCKET client_socket;
+        Logger& logger; // Rerence ot global thread-safe logger
+    public:
+        ConnectionHandler(SOCKET client_socket, Logger& logger);
+        void HandleConnection();
+};
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\include\CpuAffinity.hpp
+==================================================
+#pragma once
+#include <cstddef>
+
+namespace Affinity
+{
+    bool PinThreadToCore(int core_id);
+}
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\include\EventLoop.hpp
+==================================================
+#pragma once
+
+#include "Config.hpp"
+#include <vector>
+
+class EventLoop
+{
+    private:
+
+    public:
+        virtual void RegisterSocket(SOCKET socket) = 0;
+        virtual void WaitForEvents(std::vector<SOCKET>&active_events, int timeout_ms) = 0;
+        virtual bool AsyncAccept(SOCKET listener) = 0;
+        static EventLoop* Create();
+        virtual ~EventLoop() noexcept = default;
+};
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\include\Fiber.hpp
+==================================================
+#include "FiberContext.hpp"
+#include <cstdint>
+#include <cstddef>
+#include <functional>
+
+extern "C" const uint64_t REGISTER_PADDING;
+
+class Fiber
+{
+    private:
+        struct FiberContext context;
+        uint8_t* stack_memory;
+        size_t stack_size = 65536; // 64KB
+        std::function<void()> fiber_work;
+        static void FiberEntryPoint();
+
+    public:
+        bool is_complete = false;
+        static thread_local Fiber* current_fiber;
+        static thread_local Fiber* scheduler_fiber;
+        Fiber(std::function<void()> work);
+        ~Fiber();
+        FiberContext* GetContext();
+        static void YieldTo(Fiber* next);
+};
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\include\FiberContext.hpp
+==================================================
+struct FiberContext
+{
+    void* rsp;
+
+};
+
+extern "C" 
+    {
+        void switch_context(FiberContext* current, FiberContext* next);
+    }
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\include\HttpStatus.hpp
+==================================================
+#pragma once
+#include <cstdint>
+
+enum class status : uint16_t {
+
+    OK = 200,
+    CREATED = 201,
+    NO_CONTENT = 204,
+    BAD_REQUEST = 400,
+    UNATHORIZED = 401,
+    FORBIDDEN = 403,
+    NOT_FOUND = 404,
+    TOO_MANY_REQUESTS = 439,
+    INTERNAL_SERVER_ERROR = 500,
+    BAD_GATEWAY = 502,
+    SERVICE_UNAVAILABLE = 503
+};
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\include\Logger.hpp
+==================================================
+#pragma once
+
+#include "HttpStatus.hpp"
+#include <string>
+#include <atomic>
+#include <cstdint>
+#include <fstream>
+#include <thread>
+#include <mutex>
+#include <queue>
+#include <condition_variable>
+
+// Thread safe logging utility that writes server events to local CSV files
+
+enum class Logtype : uint8_t {
+    traffic = 1,
+    system = 0
+};
+struct LogEvent {
+    Logtype state;
+    std::string Logmessage;
+};
+class Logger {
+
+    private:
+        std::ofstream traffic;
+        std::ofstream system;
+        std::queue<LogEvent> log_queue;
+        std::mutex queue_mutex;
+        std::atomic<bool> kill;
+        std::thread log_thread;
+        std::condition_variable bell;
+        void WriteLoop();
+    public:
+        Logger();
+        ~Logger();
+        void LogTraffic(const std::string& method, const std::string& path, status status_code);
+        void LogSystem(std::thread::id thread_id, const std::string& event_description);
+};
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\include\Security.hpp
+==================================================
+#pragma once
+
+#include <string>
+
+// A standalone security module designed to sanitize inputs and block malicious payloads
+class Security
+{
+    public:
+        // Translates encouded hexadecimal chracters (e.g., %20) back to the standard ASCII
+        static std::string DecodeURL(const std::string& url);
+
+        // Evaluates a path for directory traversal or absolute root injection
+        static bool isPathSafe(const std::string& path);
+};
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\include\TcpServer.hpp
+==================================================
+#pragma once
+
+#include "ThreadPool.hpp"
+#include "Config.hpp"
+#include "Telemetry.hpp"
+#include "Logger.hpp"
+#include <cstdint>
+#include <atomic>
+
+// Represents the core network engine
+// Handles OS socket binding, port listening, and passing new connections to the Thread Pool
+class TcpServer {
+    private:
+        uint16_t port;
+        SOCKET socket_file_descriptor; 
+        bool is_running; 
+        ThreadPool pool;
+        Logger logger;
+        Telemetry* Global_Telemetry_Ptr = nullptr;
+
+        // Interanl helper to ask OS for a socket and bind it to the port
+        void SetupSocket(); 
+        
+    public:
+        TcpServer(uint16_t port); 
+        ~TcpServer(); 
+
+        // Initiates the non-blocking infinite listen loop
+        void Start(std::atomic<bool>& isRunning); 
+
+        // Signals the server to stop accepting connections
+        void Stop(); 
+};
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\include\Telemetry.hpp
+==================================================
+#pragma once
+#include <cstdint>
+
+struct Telemetry
+{
+    uint64_t total_requests = 0;
+    uint64_t active_connections = 0;
+    uint64_t total_bytes_sent = 0;
+    uint64_t total_bytes_received = 0;
+    uint64_t fiber_saturation = 0;
+    uint64_t dropped_connections = 0;
+    uint64_t average_response_time_ms = 0;
+};
+
+namespace TelemetrySystem
+{
+
+// Pointer to the global telemetry struct
+inline Telemetry* Global_Telemetry_Ptr = nullptr;
+
+void InitTelemetryBridge();
+}
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\include\ThreadPool.hpp
+==================================================
+#pragma once
+
+#include <vector>
+#include <queue>
+#include <thread>
+#include <mutex>
+#include <condition_variable>
+#include <winsock2.h>
+#include "ConnectionHandler.hpp"
+#include "Logger.hpp"
+#include "Config.hpp"
+#include "EventLoop.hpp"
+#include "Fiber.hpp"
+#include "CpuAffinity.hpp"
+
+// Manages a pre-allocated pool of workr threads to handle concurrent connections
+// Prevents the overhead of creating/destroying threads for every single HTTP request
+class ThreadPool
+{
+    private:
+        std::vector<std::thread> workers;
+        std::queue<SOCKET> clientQueue;
+
+        // Synchronization primitives to manage thread access to shared queue
+        std::mutex Lock;
+        std::condition_variable Condition;
+
+        bool stop = false;
+        Logger& logger;
+
+        // The infinite execution loop assigned to every worker thread
+        void WorkerLoop(int thread_id);
+
+    public: 
+        ThreadPool(size_t ThreadCount, Logger& logger);
+        ~ThreadPool();
+
+        // Pushes a new client into queue and wakes up a sleeping worker
+        void EnqueueClient(SOCKET client_socket);
+};
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\src\io\affinity_linux.cpp
+==================================================
+#include "CpuAffinity.hpp"
+#include <pthread.h>
+#include <sched.h>
+
+namespace Affinity
+{
+    bool PinThreadToCore(int core_id)
+    {
+        cpu_set_t cpuset;
+        CPU_ZERO(&cpuset);
+        CPU(&cpuset);
+
+        CPU_SET(core_id, &cpuset);
+
+        pthread_t thread_handle = pthread_self();
+
+        if (pthread_setaffinity_np(thread_handle, sizeof(cpu_set_t), &cpuset) == 0)
+        {
+            return true;
+        }
+        return false;
+    }
+}
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\src\io\affinity_mac.cpp
+==================================================
+#include "CpuAffinity.hpp"
+#include <mach/mach_init.h>
+#include <mach/thread_policy.h>
+#include <mach/thread_act.h>
+
+namespace Affinity
+{
+    bool PinThreadToCore(int core_id)
+    {
+        thread_port_t thread_port = mach_thread_self();
+        thread_affinity_policy_data_t policy;
+        
+        policy.affinity_tag = core_id;
+
+        if (thread_policy_set(thread_port, THREAD_AFFINITY_POLICY, reinterpret_cast<thread_policy_t>(&policy), THREAD_AFFINITY_POLICY_COUNT) == KERN_SUCCESS)
+        {
+            mach_port_deallocate(mach_task_self(), thread_port);
+            return true;
+        }
+        mach_port_deallocate(mach_task_self(), thread_port);
+        return false;
+    }
+}
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\src\io\affinity_win.cpp
+==================================================
+#include "CpuAffinity.hpp"
+#include <windows.h>
+
+namespace Affinity
+{
+    bool PinThreadToCore(int core_id)
+    {
+        HANDLE handle = GetCurrentThread();
+        DWORD_PTR mask = 1ULL << core_id;
+
+        if (SetThreadAffinityMask(handle, mask) == 0)
+        {
+            return false;
+        }
+        return true;
+    }
+}
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\src\io\epoll_linux.cpp
+==================================================
+#include "EventLoop.hpp"
+#include <sys/epoll.h>
+#include <unistd.h>
+#include <stdexcept>
+#include <vector>
+
+class EpollEventLoop : public EventLoop
+{
+    private:
+        int epoll_fd;
+        SOCKET master_listener = INVALID_SOCKET;
+
+
+    public:
+        EpollEventLoop()
+        {
+            epoll_fd = epoll_create1(0);
+
+            if (epoll_fd == -1)
+            {
+                throw std::runtime_error("Failed to create epoll file descriptor");
+            }
+        }
+        ~EpollEventLoop() noexcept override
+        {
+            close(epoll_fd);
+        }
+
+        void RegisterSocket(SOCKET socket) override
+        {
+            epoll_event event;
+
+            event.events = EPOLLIN;
+            event.data.fd = socket;
+
+            epoll_ctl(epoll_fd, EPOLL_CTL_ADD, socket, &event);
+        }
+
+        void WaitForEvents(std::vector<SOCKET>& active_events, int timeout_ms) override
+        {
+            std::vector<epoll_event> events(64);
+
+            int triggered = epoll_wait(epoll_fd, events.data(), 64, timeout_ms);
+
+            for (int i = 0; i < triggered; ++i)
+            {
+                SOCKET triggered_fd = events[i].data.fd;
+
+                if (triggered_fd == this->master_listener)
+                {
+                    SOCKET new_client = accept(master_listener, nullptr, nullptr);
+                    active_events.push_back(new_client);
+                }
+                else
+                {
+                    active_events.push_back(triggered_fd);
+                }
+            }
+        }
+
+        void AsyncAccept(SOCKET listner) override
+        {
+            this->master_listener = listner;
+        }
+};
+
+EventLoop* EventLoop::Create()
+{
+    return new EpollEventLoop();
+}
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\src\io\iocp_win.cpp
+==================================================
+#include "EventLoop.hpp"
+#include <winsock2.h>
+#include <windows.h>
+#include <mswsock.h>
+
+enum class IoOperation
+{
+    Accept,
+    Read,
+    Write
+};
+
+struct PerIoContext
+{
+    WSAOVERLAPPED overlapped;
+    IoOperation operation_type;
+    SOCKET client_socket;
+    SOCKET listener_socket;
+    DWORD bytes_received;
+    char buffer[128];
+};
+
+class IocpEventLoop : public EventLoop
+{
+    private:
+        HANDLE iocp_handle;
+        LPFN_ACCEPTEX AcceptExPtr = nullptr;
+
+    public:
+        IocpEventLoop()
+        {
+            iocp_handle = CreateIoCompletionPort(INVALID_HANDLE_VALUE, nullptr, 0, 0);
+
+            SOCKET dummy = socket(AF_INET, SOCK_STREAM, 0);
+            GUID guid = WSAID_ACCEPTEX;
+            DWORD bytes;
+
+            int status = WSAIoctl(dummy, SIO_GET_EXTENSION_FUNCTION_POINTER, &guid, sizeof(guid), &this->AcceptExPtr, sizeof(this->AcceptExPtr), &bytes, nullptr, nullptr);
+
+            if (status == SOCKET_ERROR)
+            {
+                throw std::runtime_error("Failed to load AcceptEx");
+            }
+
+            closesocket(dummy);
+
+            if (iocp_handle == NULL)
+            {
+                throw std::runtime_error("Failed to create IOCP handle");
+            }
+        }
+        ~IocpEventLoop() noexcept override
+        {
+            PostQueuedCompletionStatus(iocp_handle, 0, 0, nullptr);
+            CloseHandle(iocp_handle);
+        }
+
+        void RegisterSocket(SOCKET socket) override
+        {
+            CreateIoCompletionPort((HANDLE)socket, iocp_handle, 0, 0);
+
+            PerIoContext* context = new PerIoContext();
+            ZeroMemory(&context->overlapped, sizeof(WSAOVERLAPPED));
+            context->operation_type = IoOperation::Read;
+            context->client_socket = socket;
+
+            WSABUF wsaBuf;
+            wsaBuf.buf = nullptr;
+            wsaBuf.len = 0; // Zero bytes. Just waiting for the ping.
+            DWORD flags = 0;
+            
+            WSARecv(socket, &wsaBuf, 1, nullptr, &flags, &context->overlapped, nullptr);
+        }
+
+        void WaitForEvents(std::vector<SOCKET>& active_events, int timeout_ms) override
+        {
+            OVERLAPPED* overlapped = nullptr;
+            DWORD bytes_transferred;
+            ULONG_PTR completion_key;
+
+            bool success = GetQueuedCompletionStatus(iocp_handle, &bytes_transferred, &completion_key, &overlapped, timeout_ms);
+
+            if (overlapped != nullptr)
+            {
+                PerIoContext* context = reinterpret_cast<PerIoContext*>(overlapped);
+
+                if (success && context->operation_type == IoOperation::Accept)
+                {
+                    setsockopt(context->client_socket, SOL_SOCKET, SO_UPDATE_ACCEPT_CONTEXT,
+                               reinterpret_cast<char*>(&context->listener_socket), sizeof(context->listener_socket));
+                    active_events.push_back(context->client_socket);
+                }
+                else if (success && context->operation_type == IoOperation::Read)
+                {
+                    // ADDED: Catch the 0-byte read ping
+                    active_events.push_back(context->client_socket);
+                }
+                else if (!success)
+                {
+                    // Cleanly drop dead connections
+                    closesocket(context->client_socket); 
+                }
+                delete context;
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        bool AsyncAccept(SOCKET listener)
+        {
+            // new_client = socket(AF_INET, SOCK_STREAM, 0);
+
+            // WSAOVERLAPPED WSAOver = {};
+            // char buffer[128];
+            // ;
+
+            // AcceptExPtr(listener, new_client, buffer, 0, sizeof(sockaddr_in) + 16, sizeof(sockaddr_in) + 16, &bytes_received, &WSAOver);
+
+            // return true;
+
+            PerIoContext* context = new PerIoContext();
+            ZeroMemory(&context->overlapped, sizeof(WSAOVERLAPPED));
+            context->operation_type = IoOperation::Accept;
+            context->listener_socket = listener;
+
+            context->client_socket = socket(AF_INET, SOCK_STREAM, 0);
+
+            AcceptExPtr(listener, context->client_socket, context->buffer, 0, sizeof(sockaddr_in) + 16, sizeof(sockaddr_in) + 16, &context->bytes_received, &context->overlapped);
+
+            return true;
+        }
+};
+
+EventLoop* EventLoop::Create()
+{
+    return new IocpEventLoop();
+}
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\src\io\kqueue_mac.cpp
+==================================================
+#include "EventLoop.hpp"
+#include <sys/types.h>
+#include <sys/time.h>
+#include <sys/event.h>
+#include <unistd.h>
+#include <stdexcept>
+
+class KqueueEventLoop : public EventLoop
+{
+    private:
+        int kq_fd;
+        SOCKET master_listener = INVALID_SOCKET;
+
+    public:
+        KqueueEventLoop()
+        {
+            kq_fd = kqueue();
+
+            if (kq_fd == -1)
+            {
+                throw std::runtime_error("Failed to create Kqueue file descriptor");
+            }
+        }
+
+        ~KqueueEventLoop() noexcept
+        {
+            close(kq_fd);
+        }
+
+        void RegisterSocket(SOCKET socket) override
+        {
+            struct kevent event;
+
+            EV_SET(&event, socket, EVFILT_READ, EV_ADD | EV_ENABLE, 0, 0, NULL);
+
+            kevent(kq_fd, &event, 1, NULL, 0, NULL);
+        }
+
+        void WaitForEvents(std::vector<SOCKET>& active_events, int timeout_ms) override
+        {
+            std::vector<struct kevent> events(64);
+            struct timespect ts;
+            ts.tv_sec = timeout_ms / 1000;
+            ts.tv_nsec = (timeout_ms % 1000) * 100000
+
+            int triggered = kevent(kq_fd, NULL, 0, events.data(), 64, &ts);
+
+            for (int i = 0; i < triggered; ++i)
+            {
+                SOCKET triggered_fd = events[i].ident;
+
+                if (triggered_fd == this->master_listener)
+                {
+                    SOCKET new_client = accept(master_listener, nullptr, nullptr);
+                    active_events.push_back(new_client);
+                }
+                else
+                {
+                    active_events.push_back(triggered_fd);
+                }
+            } 
+        }
+
+        void AsyncAccept(SOCKET listner) override 
+        {
+            this->master_listener = listner;
+        }
+};
+
+EventLoop* EventLoop::Create()
+{
+    return new KqueueEventLoop();
+}
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\src\io\telemetry_posix.cpp
+==================================================
+#include "Telemetry.hpp"
+#include <sys/mman.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <iostream>
+#include <cstring>
+#include <stdexcept>
+
+void TelemetrySystem::InitTelemetryBridge()
+{
+    int fd = open("../planet.dat", O_CREAT | O_RDWR, 0666);
+    if (fd == -1)
+    {
+        throw std::runtime_error("Failed to open telemetry storage file");
+    }
+
+    if (ftruncate(fd, sizeof(Telemetry)) == -1)
+    {
+        close(fd);
+        throw std::runtime_error("Failed to size telemetry storage file");
+    }
+
+    void* mapped = mmap(nullptr, sizeof(Telemetry), PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
+    if (mapped == MAP_FAILED)
+    {
+        close(fd);
+        throw std::runtime_error("Failed to memory map telemetry shared memory block");
+    }
+
+    TelemetrySystem::Global_Telemetry_Ptr = static_cast<Telemetry*>(mapped);
+    close(fd); // File descriptor can safely close; mapping persists in virtual memory
+}
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\src\io\telemetry_win.cpp
+==================================================
+#include "Telemetry.hpp"
+#include <windows.h>
+#include <iostream>
+#include <thread>
+#include <chrono>
+
+void TelemetrySystem::InitTelemetryBridge()
+    {
+        TelemetrySystem::Global_Telemetry_Ptr = new Telemetry();
+        std::thread([]()
+        {
+            HANDLE hPipe =
+                CreateNamedPipeA("\\\\.\\pipe\\planet9_telemetry",
+                                 PIPE_ACCESS_OUTBOUND,
+                                 PIPE_TYPE_MESSAGE | PIPE_WAIT,
+                                 1,
+                                 sizeof(Telemetry),
+                                 sizeof(Telemetry),
+                                 0,
+                                 nullptr);
+            DWORD written = 0;
+            while(true)
+            {
+                ConnectNamedPipe(hPipe, nullptr);
+                while(true)
+                {
+                    if (WriteFile(hPipe, Global_Telemetry_Ptr, sizeof(Telemetry), &written, nullptr))
+                    {
+                        std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+                    }
+                    else 
+                    {
+                        std::cerr << "Failed to write telemetry data to pipe: " << std::endl;
+                        break;
+                    }
+                }
+            DisconnectNamedPipe(hPipe);
+        }
+        }).detach();        
+    }
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\src\ConnectionHandler.cpp
+==================================================
+#include "ConnectionHandler.hpp"
+#include "Security.hpp"
+#include "Telemetry.hpp"
+#include "HttpStatus.hpp"
+#include "Fiber.hpp"
+#include <sstream>
+#include <filesystem>
+
+ConnectionHandler::ConnectionHandler(SOCKET client_socket, Logger& logger) : client_socket(client_socket), logger(logger) {};
+
+void ConnectionHandler::HandleConnection()
+{
+    MAKE_SOCKET_NON_BLOCKING(client_socket);
+    auto time_start = std::chrono::high_resolution_clock::now();
+
+    std::string client_message = "";
+    
+    while (true){
+        char buffer[Config::BUFFER_SIZE] = {0};
+        int bytes_read = recv(client_socket, buffer, Config::BUFFER_SIZE, 0);
+
+        // Only process if actual data was recieved
+        if (bytes_read > 0)
+        {
+            TelemetrySystem::Global_Telemetry_Ptr->total_bytes_received += bytes_read;
+
+            // Construct string suing exact bytes_read to preven out-of-bounds memeory reading
+            client_message.append(buffer, bytes_read);
+
+            if (client_message.find("\r\n\r\n") != std::string::npos) {break;}
+        }
+
+        else if (bytes_read == 0)
+        {
+            closesocket(client_socket);
+            return;
+        }
+
+        else if (bytes_read == SOCKET_ERROR)
+        {
+            if (NET_ERROR() == NET_ERR_WOULDBLOCK)
+            {
+                Fiber::YieldTo(Fiber::scheduler_fiber);
+            }
+            else 
+            {
+            closesocket(client_socket); 
+            return;
+            }
+        }
+    }
+
+    std::istringstream request_stream(client_message);
+            
+    std::string method;
+    std::string path;
+
+    // Extract HTTP method and target URL from the request stream
+    request_stream >> method >> path;
+
+    TelemetrySystem::Global_Telemetry_Ptr->total_requests++;
+
+    // Route empty root requests to default homepage
+    if (path == "/")
+    {
+        path = "/index.html";
+    }
+
+    // String leading forward slash to prevent absolute path confusion on the local OS
+    path = path.substr(1);
+
+    // Security Checkpoint: Block directory traveral attempts (e.g., ../)
+    if (!Security::isPathSafe(path))
+    {
+        logger.LogTraffic(method,path, status::FORBIDDEN);
+        std::string response = "HTTP/1.1 403 Forbidden\r\nContent-Length: 11\r\n\r\nForbidden";
+        send(client_socket, response.c_str(), response.size(), 0);
+        TelemetrySystem::Global_Telemetry_Ptr->total_bytes_sent += response.size();
+        closesocket(client_socket);
+        TelemetrySystem::Global_Telemetry_Ptr->dropped_connections++;
+        return; // Eject immediately
+    }
+
+    path = "public/" + path; // Prepend public directory to ensure all requests are relative to it
+
+    std::cout << "CRITICAL MEASUREMENT: OS is looking for file at: " 
+          << std::filesystem::absolute(path) << std::endl;
+
+    std::ifstream file(path);
+
+    std::string content_type = "text/html"; // Default MIME type
+
+    // MIME Type Router: Dynamically adjust heads based on file extension
+    if (path.find_last_of('.') != std::string::npos)
+    {
+        std::string extension = path.substr(path.find_last_of('.'));
+
+        if (extension == ".html")
+        {
+            content_type = "text/html";
+        }
+        else if (extension == ".css")
+        {
+            content_type = "text/css";
+        }
+        else if (extension == ".js")
+        {
+            content_type = "application/javascript";
+        }
+
+        
+    }
+
+    // Server requested or throw 404 error
+    if (file.is_open())
+    {
+        std::stringstream file_buffer; 
+        file_buffer << file.rdbuf(); // Read entire file inot memeory
+
+        std::string body = file_buffer.str();
+
+        std::string response = "HTTP/1.1 200 OK\r\nContent-Type: " + content_type + "\r\nContent-Length: " + std::to_string(body.size()) + "\r\n\r\n";
+        response += body;
+
+        logger.LogTraffic(method, path, status::OK);
+        send(client_socket, response.c_str(), response.size(), 0);
+        TelemetrySystem::Global_Telemetry_Ptr->total_bytes_sent += response.size();
+    }
+
+    else
+    {
+        std::string response = "HTTP/1.1 404 Not Found\r\nContent-Length: 13\r\n\r\n404 Not Found";
+        logger.LogTraffic(method, path, status::NOT_FOUND);
+        send(client_socket, response.c_str(), response.size(), 0);
+        TelemetrySystem::Global_Telemetry_Ptr->total_bytes_sent += response.size();
+    }
+
+    auto time_end = std::chrono::high_resolution_clock::now();
+    uint64_t current_total = TelemetrySystem::Global_Telemetry_Ptr->total_requests;
+    uint64_t current_avg = TelemetrySystem::Global_Telemetry_Ptr->average_response_time_ms;
+    uint64_t response_time_ms = std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_start).count(); 
+    TelemetrySystem::Global_Telemetry_Ptr->average_response_time_ms = (current_avg * (current_total - 1) + response_time_ms) / current_total;
+
+    // Always close the socket to prevent resource leaks
+    closesocket(client_socket);
+    TelemetrySystem::Global_Telemetry_Ptr->active_connections--;
+}
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\src\Fiber.cpp
+==================================================
+#include "Fiber.hpp"
+#include <stdexcept>
+
+thread_local Fiber* Fiber::current_fiber = nullptr;
+thread_local Fiber* Fiber::scheduler_fiber = nullptr;
+
+Fiber::Fiber(std::function<void()> work)
+{
+    this->fiber_work = work;
+    stack_memory = new uint8_t[stack_size];
+
+    uint8_t* top_of_stack = stack_memory + stack_size;
+    uintptr_t stack_int = reinterpret_cast<uintptr_t>(top_of_stack);
+    stack_int &= ~15;
+    top_of_stack = reinterpret_cast<uint8_t*>(stack_int);
+
+    top_of_stack -= sizeof(void*);
+    *reinterpret_cast<void**>(top_of_stack) = reinterpret_cast<void*>(&Fiber::FiberEntryPoint);
+    top_of_stack -= REGISTER_PADDING;
+    context.rsp = top_of_stack;
+}
+
+Fiber::~Fiber()
+{
+    delete[] stack_memory;
+}
+
+void Fiber::YieldTo(Fiber* next)
+{
+    if (current_fiber == nullptr)
+    {
+        throw std::runtime_error("Cannot yield from main OS thread without a bootstrap fiber.");
+    }
+    Fiber* current = current_fiber;
+    current_fiber = next;
+    switch_context(&current->context, &next->context);
+}
+
+void Fiber::FiberEntryPoint()
+{
+    current_fiber->fiber_work();
+    current_fiber->is_complete = true;
+    Fiber::YieldTo(Fiber::scheduler_fiber);
+}
+
+FiberContext* Fiber::GetContext()
+{
+    return &context;
+}
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\src\Logger.cpp
+==================================================
+#include "../include/Logger.hpp"
+#include <iostream>
+#include <filesystem>
+#include <chrono>
+#include <ctime>
+#include <iomanip>
+
+Logger::Logger()
+{
+    kill = true; // Thread should stay alive
+    // Ensure the logs directory exists on startup
+    if (!std::filesystem::exists("../logs/"))
+    {
+        std::filesystem::create_directories("logs/");
+    }
+
+    auto now = std::chrono::system_clock::now();
+    std::time_t current_time = std::chrono::system_clock::to_time_t(now);
+    std::stringstream time_stream;
+    
+    // Format timestamp for unique log file naming
+    time_stream << std::put_time(std::localtime(&current_time), "%m_%d_%Y_%H_%M_%S");
+    std::string traffic_directory = "../logs/traffic_" + time_stream.str() + ".csv";
+    std::string system_directory = "../logs/system_" + time_stream.str() + ".csv";
+
+    // Open streams in append mode
+    traffic.open(traffic_directory, std::ios::app);
+    system.open(system_directory, std::ios::app);
+
+    log_thread = std::thread(&Logger::WriteLoop, this);
+
+    if (!traffic.is_open() || !system.is_open())
+    {
+       throw std::runtime_error("Failed to open log files!");
+    }
+}
+
+Logger::~Logger()
+{
+    kill = false;
+    bell.notify_all();
+
+    if (log_thread.joinable())
+    {
+        log_thread.join();
+    }
+
+    // Safely close streams on shutdown
+    if (traffic.is_open() && system.is_open())
+    {
+        traffic.close();
+        system.close();
+    }
+}
+
+void Logger::LogTraffic(const std::string& method, const std::string& path, status status_code)
+{
+    uint16_t code = static_cast<uint16_t>(status_code);
+    std::stringstream traffic_stream;
+    LogEvent traffic_event;
+    
+    traffic_stream << method << ", " 
+                   << path << ", " 
+                   << code << std::endl;
+
+    traffic_event.state = Logtype::traffic;
+    traffic_event.Logmessage = traffic_stream.str();
+    // Lock the mutex to ensure thread-safe console and file output
+    {
+        std::lock_guard<std::mutex> lock(queue_mutex);
+        log_queue.push(traffic_event);
+    }
+    bell.notify_one();
+    std::cout << traffic_stream.str();
+}
+
+void Logger::LogSystem(std::thread::id thread_id, const std::string& event_description)
+{
+    std::stringstream system_stream;
+    LogEvent system_event;
+    
+    system_stream << thread_id << ", " << event_description << std::endl;
+
+    system_event.state = Logtype::system;
+    system_event.Logmessage = system_stream.str();
+    // Lock the mutex to ensure thread-safe console and file output
+    {
+        std::lock_guard<std::mutex> lock(queue_mutex);
+        log_queue.push(system_event);
+    }
+    bell.notify_one();
+    std::cout << system_stream.str();
+}
+
+void Logger::WriteLoop()
+{
+    while(true)
+    {
+        std::unique_lock<std::mutex> lock(queue_mutex);
+        bell.wait(lock, [&] {
+            return !log_queue.empty() || kill == false;
+        });
+
+        if (kill == false && log_queue.empty())
+        {
+            break;
+        }
+
+        LogEvent write;
+        write = log_queue.front();
+        log_queue.pop();
+
+        lock.unlock();
+
+        if (write.state == Logtype::traffic)
+        {
+            traffic << write.Logmessage;
+            traffic.flush();
+        }
+        else if (write.state == Logtype::system)
+        {
+            system << write.Logmessage;
+            system.flush();
+        }
+    }
+    
+}
+
+// void Logger::Log(const std::string& message)
+// {
+//     auto now = std::chrono::system_clock::now();
+//     std::time_t current_time = std::chrono::system_clock::to_time_t(now);
+
+//     std::lock_guard<std::mutex> lock(log_mutex);
+//     std::cout << "["
+//               << std::put_time(std::localtime(&current_time), "%Y-%m-%d %H:%M:%S")
+//               << "] " << message << std::endl;
+//     log_file << "["
+//              << std::put_time(std::localtime(&current_time), "%Y-%m-%d %H:%M:%S")
+//              << "] " << message << std::endl;
+//     log_file.flush();
+// }
+
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\src\main.cpp
+==================================================
+#include "../include/TcpServer.hpp"
+#include "../include/Config.hpp"
+#include "../include/ConnectionHandler.hpp"
+#include "../include/ThreadPool.hpp"
+#include "../include/Telemetry.hpp"
+#include <iostream>
+#include <thread>
+#include <csignal>
+#include <atomic>
+#include <exception>
+
+// Global atomic flag to control the main execution loop safely across threads
+std::atomic<bool> running(true);
+
+// Forward declaration for OS signal interception
+void SignalHandler(int signal);
+
+int main() {
+
+    INIT_WINSOCK(); // Initialize WinSock on Windows, no-op on Unix-like systems
+    TelemetrySystem::InitTelemetryBridge();
+
+    std::ofstream pid_file(Config::PID_FILE_PATH);
+        if (pid_file.is_open())
+        {
+            pid_file << GET_PID();
+            pid_file.close();
+        }
+
+    // Bind OS termination signals (Ctrl + C) to custom handler
+    // Allows a graceful shutdown, ensuring threads and files close properly
+    std::signal(SIGINT, SignalHandler);
+
+    try
+    {
+        TcpServer server(Config::DEFAULT_PORT);
+        server.Start(running);
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << e.what() << '\n';
+    }
+    
+    return 0;
+}
+
+// Trigger when user attemps to terminate program/server
+void SignalHandler(int signal)
+{
+    std::cout << "Shutdown signal received: " << signal << ". Closing engine" << std::endl;
+    running = false; // Breakes TcpServer loop
+}
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\src\Security.cpp
+==================================================
+#include "../include/Security.hpp"
+
+std::string Security::DecodeURL(const std::string& url)
+{
+    std::string decoded_path;
+
+    for (size_t i = 0; i < url.length(); ++i)
+    {
+        // INdentify hex-encoded character and verify bounds to prevent over-reading
+        if (url[i] == '%' && i + 2 < url.length())
+        {
+            std::string hex = url.substr(i + 1, 2);
+            int code = std::stoi(hex, nullptr, 16); // Convert base-16 string to integer
+            decoded_path += static_cast<char>(code);
+            i += 2; // Leapfrog over the translated hex characters
+
+        }
+        // Handle explicit spaces encoded as plus signs
+        else if (url[i] == '+')
+        {
+            decoded_path += ' ';
+        }
+
+        else
+        {
+            decoded_path += url[i];
+        }
+    }
+    return decoded_path;
+}
+
+bool Security::isPathSafe(const std::string &path)
+{
+    // Decode first to prevent hackers bypassing the check using URL encoding
+    std::string decoded_path = DecodeURL(path);
+
+    // Thread 1: Directory Traveral (e.g., ../)
+    if (decoded_path.find("..") != std::string::npos)
+    {
+        return false;
+    }
+    // Thread 2: Drive Letter Access (e.g., C:\)
+    else if (decoded_path.find(":") != std::string::npos)
+    {
+        return false;
+    }
+    // Thread 3: Absolute Root Injection (e.g., /Windows or \Windows)
+    else if (!decoded_path.empty() && decoded_path[0] =='/' || decoded_path[0] == '\\')
+    {
+        return false;
+    }
+    else
+    {
+        return true; // path passsed all security constraints
+    }
+}
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\src\TcpServer.cpp
+==================================================
+#include "TcpServer.hpp"
+#include "ConnectionHandler.hpp"
+#include "Telemetry.hpp"
+#include "EventLoop.hpp"
+#include <filesystem>
+#include <iostream> 
+#include <stdexcept> 
+
+TcpServer::TcpServer(uint16_t port) 
+    : port(port), socket_file_descriptor(INVALID_SOCKET), 
+    is_running(false), logger(), pool(Config::THREAD_POOL_SIZE, this->logger)
+    { 
+    }
+
+void TcpServer::SetupSocket()
+{
+    // Request an IPv4, TCP streaming socket from the operating system
+    this->socket_file_descriptor = socket(AF_INET, SOCK_STREAM, 0);
+
+    if (this->socket_file_descriptor == INVALID_SOCKET)
+    {
+        std::cerr << "socket() failed with error: "
+                  << NET_ERROR() << std::endl;
+        throw std::runtime_error("Failed to create socket");
+    }
+
+    // Configure network address architurture 
+    sockaddr_in server_address = {};
+    server_address.sin_family = AF_INET;
+    server_address.sin_port = htons(this->port);  // Convert prot to network byte order
+    server_address.sin_addr.s_addr = INADDR_ANY; // Listen onall availiable netowrk interfaces
+
+    if (bind(this->socket_file_descriptor, 
+        (sockaddr*)&server_address, 
+        sizeof(server_address)) == SOCKET_ERROR)
+    {
+        std::cerr << "bind() failed with error: "
+                  << NET_ERROR() << std::endl;
+        if (NET_ERROR() == NET_ERR_ADDRINUSE)
+        {
+            throw std::runtime_error("CRITICAL: Port 8080 is already in use by another program! Did you leave another instance of this server running?");
+        }
+    }
+
+    // Begin queuing incoming connection requests
+    if (listen(this->socket_file_descriptor, 
+        Config::MAX_CONNECTIONS) == SOCKET_ERROR)
+    {
+        std::cerr << "listen() failed with error: "
+                  << NET_ERROR() << std::endl;
+        throw std::runtime_error("Failed to listen on socket");
+    }
+}
+
+void TcpServer::Start(std::atomic<bool>& isRunning) 
+{
+    SetupSocket();
+    std::cout << "Server running and listening on port " << this->port << std::endl;
+    EventLoop* loop = EventLoop::Create();
+    loop->RegisterSocket(this->socket_file_descriptor);
+
+    for (int i = 0; i <= 99; ++i)
+    {
+        loop->AsyncAccept(this->socket_file_descriptor);
+    }
+
+    while (isRunning.load())
+    {
+        std::vector<SOCKET> active_sockets;
+        loop->WaitForEvents(active_sockets, 100);
+
+        for (int i = 0; i < active_sockets.size(); ++i)
+        {
+            pool.EnqueueClient(active_sockets.at(i));
+            loop->AsyncAccept(this->socket_file_descriptor);
+        }
+    }
+    delete loop;
+}
+
+void TcpServer::Stop()
+{
+    is_running = false;
+}
+
+TcpServer::~TcpServer()
+{
+    Stop();
+
+    if (this->socket_file_descriptor != INVALID_SOCKET)
+    {
+        closesocket(this->socket_file_descriptor);
+    }
+
+    // Free OS network resources
+    CLEANUP_WINSOCK();
+    std::remove(Config::PID_FILE_PATH); // Remove PID file on shutdown
+}
+
+
+==================================================
+File: C:\Users\micah\Documents\Master Folder\Repo 1 (Fiber TCP Server)\src\ThreadPool.cpp
+==================================================
+#include "ThreadPool.hpp"
+#include "Telemetry.hpp"
+#include "Logger.hpp"
+#include <unordered_map>
+
+ThreadPool::ThreadPool(size_t ThreadCount, Logger& logger)
+: logger(logger)
+{
+    // Pre-allocate and start all worker threads upon instatiation
+    for (size_t i = 0; i < ThreadCount; ++i)
+    {
+        workers.emplace_back(&ThreadPool::WorkerLoop, this, i);
+    }
+}
+
+void ThreadPool::WorkerLoop(int thread_id)
+{
+    Affinity::PinThreadToCore(thread_id);
+    EventLoop* local_loop = EventLoop::Create();
+    Fiber master_fiber([](){});
+
+    Fiber::scheduler_fiber = &master_fiber;
+
+    Fiber::current_fiber = &master_fiber;
+    std::unordered_map<SOCKET, Fiber*> active_fibers;
+    while(true)
+    {
+        // Lock the mutex before checking the queue 
+        std::unique_lock<std::mutex> lock(Lock);
+
+        // Put thread to sleep to save CPU cycels until a client is available or shutdown is tirggered
+        std::vector<SOCKET> new_clients;
+
+        while (!clientQueue.empty())
+        {
+            new_clients.push_back(clientQueue.front());
+            clientQueue.pop();
+        }
+
+        lock.unlock();
+
+        for (int client_socket : new_clients)
+        {
+            this->logger.LogSystem(std::this_thread::get_id(), "Processing Connection");
+
+            Fiber* fiber = new Fiber(
+                [this, client_socket]()
+                {
+                    ConnectionHandler handler(client_socket, this->logger);
+                    handler.HandleConnection();
+                }
+            );
+            local_loop->RegisterSocket(client_socket);
+            active_fibers.emplace(client_socket, fiber);
+
+            Fiber::YieldTo(fiber);
+
+            if (fiber->is_complete)
+            {
+                delete fiber;
+                active_fibers.erase(client_socket);
+            }
+        }
+
+        std::vector<SOCKET> active_events;
+        local_loop->WaitForEvents(active_events, 100);
+
+        for (SOCKET active_socket : active_events)
+        {
+
+            if (active_fibers.find(active_socket) != active_fibers.end())
+            {
+                Fiber* target_fiber = active_fibers[active_socket];
+                Fiber::YieldTo(target_fiber);
+
+                if (target_fiber->is_complete)
+                {
+                    delete target_fiber;
+                    active_fibers.erase(active_socket);
+                }
+            }
+        }
+
+        // If shutdown flag is active and queue is empty, terminate the thread
+        if (this->stop && clientQueue.empty())
+        {
+            return;
+        }
+
+        // Safely extract client and release the lock immediately so toher threads can access the queue
+        // SOCKET client_socket = clientQueue.front();
+        // clientQueue.pop();
+        // TelemetrySystem::Global_Telemetry_Ptr->fiber_saturation--;
+        // lock.unlock();
+    }
+}
+
+void ThreadPool::EnqueueClient(SOCKET client_socket)
+{
+    //Secure exclusive access to the queue before pushing new data
+    std::lock_guard<std::mutex> lock(Lock);
+    if (clientQueue.size() >= Config::MAX_CONNECTIONS)
+    {
+        linger axe;
+        axe.l_onoff = 1;
+        axe.l_linger = 0;
+        setsockopt(client_socket, SO_LINGER, SOL_SOCKET, CAST_SOCKOPT(&axe), sizeof(axe));
+        closesocket(client_socket);
+        TelemetrySystem::Global_Telemetry_Ptr->dropped_connections++;
+        return;
+    }
+    clientQueue.push(client_socket);
+    TelemetrySystem::Global_Telemetry_Ptr->fiber_saturation++;
+
+    // Ping the condition variable to wake up exactly one sleeping worker
+    Condition.notify_one();
+}
+
+ThreadPool::~ThreadPool()
+{
+    {
+        // Lock queue and trigger the global kill switch
+        std::lock_guard<std::mutex> LockGuard(Lock);
+        stop = true;
+    }
+    // Wake up all sleeping threads so they can evaluate the stop flag and exit naturally
+    Condition.notify_all();
+
+    for (std::thread &worker : workers)
+    {
+        // Re-sync worker threads with the main program execution before destructing
+        if (worker.joinable())
+        {
+            worker.join();
+        }
+    }
+}
+
+

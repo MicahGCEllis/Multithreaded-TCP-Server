@@ -1,38 +1,110 @@
 [
 {
-  "directory": "C:/Users/micah/Documents/MultithreadedServer/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/micah/Documents/MultithreadedServer/include -g -std=gnu++20 -o CMakeFiles\\MultithreadedServer.dir\\src\\main.cpp.obj -c C:\\Users\\micah\\Documents\\MultithreadedServer\\src\\main.cpp",
-  "file": "C:/Users/micah/Documents/MultithreadedServer/src/main.cpp",
-  "output": "C:/Users/micah/Documents/MultithreadedServer/build/CMakeFiles/MultithreadedServer.dir/src/main.cpp.obj"
+  "directory": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/NetworkEngine.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\NetworkEngine.dir\\src\\Fiber.cpp.obj -c \"C:\\Users\\micah\\Documents\\Master Folder\\Repo 1 (Fiber TCP Server)\\src\\Fiber.cpp\"",
+  "file": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/src/Fiber.cpp",
+  "output": "CMakeFiles/NetworkEngine.dir/src/Fiber.cpp.obj"
 },
 {
-  "directory": "C:/Users/micah/Documents/MultithreadedServer/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/micah/Documents/MultithreadedServer/include -g -std=gnu++20 -o CMakeFiles\\MultithreadedServer.dir\\src\\TcpServer.cpp.obj -c C:\\Users\\micah\\Documents\\MultithreadedServer\\src\\TcpServer.cpp",
-  "file": "C:/Users/micah/Documents/MultithreadedServer/src/TcpServer.cpp",
-  "output": "C:/Users/micah/Documents/MultithreadedServer/build/CMakeFiles/MultithreadedServer.dir/src/TcpServer.cpp.obj"
+  "directory": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/NetworkEngine.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\NetworkEngine.dir\\src\\ThreadPool.cpp.obj -c \"C:\\Users\\micah\\Documents\\Master Folder\\Repo 1 (Fiber TCP Server)\\src\\ThreadPool.cpp\"",
+  "file": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/src/ThreadPool.cpp",
+  "output": "CMakeFiles/NetworkEngine.dir/src/ThreadPool.cpp.obj"
 },
 {
-  "directory": "C:/Users/micah/Documents/MultithreadedServer/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/micah/Documents/MultithreadedServer/include -g -std=gnu++20 -o CMakeFiles\\MultithreadedServer.dir\\src\\ConnectionHandler.cpp.obj -c C:\\Users\\micah\\Documents\\MultithreadedServer\\src\\ConnectionHandler.cpp",
-  "file": "C:/Users/micah/Documents/MultithreadedServer/src/ConnectionHandler.cpp",
-  "output": "C:/Users/micah/Documents/MultithreadedServer/build/CMakeFiles/MultithreadedServer.dir/src/ConnectionHandler.cpp.obj"
+  "directory": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/NetworkEngine.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\NetworkEngine.dir\\src\\ConnectionHandler.cpp.obj -c \"C:\\Users\\micah\\Documents\\Master Folder\\Repo 1 (Fiber TCP Server)\\src\\ConnectionHandler.cpp\"",
+  "file": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/src/ConnectionHandler.cpp",
+  "output": "CMakeFiles/NetworkEngine.dir/src/ConnectionHandler.cpp.obj"
 },
 {
-  "directory": "C:/Users/micah/Documents/MultithreadedServer/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/micah/Documents/MultithreadedServer/include -g -std=gnu++20 -o CMakeFiles\\MultithreadedServer.dir\\src\\ThreadPool.cpp.obj -c C:\\Users\\micah\\Documents\\MultithreadedServer\\src\\ThreadPool.cpp",
-  "file": "C:/Users/micah/Documents/MultithreadedServer/src/ThreadPool.cpp",
-  "output": "C:/Users/micah/Documents/MultithreadedServer/build/CMakeFiles/MultithreadedServer.dir/src/ThreadPool.cpp.obj"
+  "directory": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/NetworkEngine.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\NetworkEngine.dir\\src\\TcpServer.cpp.obj -c \"C:\\Users\\micah\\Documents\\Master Folder\\Repo 1 (Fiber TCP Server)\\src\\TcpServer.cpp\"",
+  "file": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/src/TcpServer.cpp",
+  "output": "CMakeFiles/NetworkEngine.dir/src/TcpServer.cpp.obj"
 },
 {
-  "directory": "C:/Users/micah/Documents/MultithreadedServer/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/micah/Documents/MultithreadedServer/include -g -std=gnu++20 -o CMakeFiles\\MultithreadedServer.dir\\src\\Logger.cpp.obj -c C:\\Users\\micah\\Documents\\MultithreadedServer\\src\\Logger.cpp",
-  "file": "C:/Users/micah/Documents/MultithreadedServer/src/Logger.cpp",
-  "output": "C:/Users/micah/Documents/MultithreadedServer/build/CMakeFiles/MultithreadedServer.dir/src/Logger.cpp.obj"
+  "directory": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/NetworkEngine.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\NetworkEngine.dir\\src\\Logger.cpp.obj -c \"C:\\Users\\micah\\Documents\\Master Folder\\Repo 1 (Fiber TCP Server)\\src\\Logger.cpp\"",
+  "file": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/src/Logger.cpp",
+  "output": "CMakeFiles/NetworkEngine.dir/src/Logger.cpp.obj"
 },
 {
-  "directory": "C:/Users/micah/Documents/MultithreadedServer/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -IC:/Users/micah/Documents/MultithreadedServer/include -g -std=gnu++20 -o CMakeFiles\\MultithreadedServer.dir\\src\\Security.cpp.obj -c C:\\Users\\micah\\Documents\\MultithreadedServer\\src\\Security.cpp",
-  "file": "C:/Users/micah/Documents/MultithreadedServer/src/Security.cpp",
-  "output": "C:/Users/micah/Documents/MultithreadedServer/build/CMakeFiles/MultithreadedServer.dir/src/Security.cpp.obj"
+  "directory": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/NetworkEngine.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\NetworkEngine.dir\\src\\Security.cpp.obj -c \"C:\\Users\\micah\\Documents\\Master Folder\\Repo 1 (Fiber TCP Server)\\src\\Security.cpp\"",
+  "file": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/src/Security.cpp",
+  "output": "CMakeFiles/NetworkEngine.dir/src/Security.cpp.obj"
+},
+{
+  "directory": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/NetworkEngine.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\NetworkEngine.dir\\src\\io\\iocp_win.cpp.obj -c \"C:\\Users\\micah\\Documents\\Master Folder\\Repo 1 (Fiber TCP Server)\\src\\io\\iocp_win.cpp\"",
+  "file": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/src/io/iocp_win.cpp",
+  "output": "CMakeFiles/NetworkEngine.dir/src/io/iocp_win.cpp.obj"
+},
+{
+  "directory": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/NetworkEngine.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\NetworkEngine.dir\\src\\io\\affinity_win.cpp.obj -c \"C:\\Users\\micah\\Documents\\Master Folder\\Repo 1 (Fiber TCP Server)\\src\\io\\affinity_win.cpp\"",
+  "file": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/src/io/affinity_win.cpp",
+  "output": "CMakeFiles/NetworkEngine.dir/src/io/affinity_win.cpp.obj"
+},
+{
+  "directory": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/NetworkEngine.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\NetworkEngine.dir\\src\\io\\telemetry_win.cpp.obj -c \"C:\\Users\\micah\\Documents\\Master Folder\\Repo 1 (Fiber TCP Server)\\src\\io\\telemetry_win.cpp\"",
+  "file": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/src/io/telemetry_win.cpp",
+  "output": "CMakeFiles/NetworkEngine.dir/src/io/telemetry_win.cpp.obj"
+},
+{
+  "directory": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/NetworkEngine.dir/includes_ASM.rsp -g -o CMakeFiles\\NetworkEngine.dir\\src\\asm\\switch_win_x64.S.obj -c \"C:\\Users\\micah\\Documents\\Master Folder\\Repo 1 (Fiber TCP Server)\\src\\asm\\switch_win_x64.S\"",
+  "file": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/src/asm/switch_win_x64.S",
+  "output": "CMakeFiles/NetworkEngine.dir/src/asm/switch_win_x64.S.obj"
+},
+{
+  "directory": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe  @CMakeFiles/NetworkEngine.dir/includes_ASM.rsp -g -o CMakeFiles\\NetworkEngine.dir\\src\\asm\\get_rsp_win_x64.S.obj -c \"C:\\Users\\micah\\Documents\\Master Folder\\Repo 1 (Fiber TCP Server)\\src\\asm\\get_rsp_win_x64.S\"",
+  "file": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/src/asm/get_rsp_win_x64.S",
+  "output": "CMakeFiles/NetworkEngine.dir/src/asm/get_rsp_win_x64.S.obj"
+},
+{
+  "directory": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/test_connection_handler.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\test_connection_handler.dir\\tests\\test_connection_handler.cpp.obj -c \"C:\\Users\\micah\\Documents\\Master Folder\\Repo 1 (Fiber TCP Server)\\tests\\test_connection_handler.cpp\"",
+  "file": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/tests/test_connection_handler.cpp",
+  "output": "CMakeFiles/test_connection_handler.dir/tests/test_connection_handler.cpp.obj"
+},
+{
+  "directory": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/test_fiber_alignment.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\test_fiber_alignment.dir\\tests\\test_fiber_alignment.cpp.obj -c \"C:\\Users\\micah\\Documents\\Master Folder\\Repo 1 (Fiber TCP Server)\\tests\\test_fiber_alignment.cpp\"",
+  "file": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/tests/test_fiber_alignment.cpp",
+  "output": "CMakeFiles/test_fiber_alignment.dir/tests/test_fiber_alignment.cpp.obj"
+},
+{
+  "directory": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/test_fiber_scheduler.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\test_fiber_scheduler.dir\\tests\\test_fiber_scheduler.cpp.obj -c \"C:\\Users\\micah\\Documents\\Master Folder\\Repo 1 (Fiber TCP Server)\\tests\\test_fiber_scheduler.cpp\"",
+  "file": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/tests/test_fiber_scheduler.cpp",
+  "output": "CMakeFiles/test_fiber_scheduler.dir/tests/test_fiber_scheduler.cpp.obj"
+},
+{
+  "directory": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/test_iocp_accept.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\test_iocp_accept.dir\\tests\\test_iocp_accept.cpp.obj -c \"C:\\Users\\micah\\Documents\\Master Folder\\Repo 1 (Fiber TCP Server)\\tests\\test_iocp_accept.cpp\"",
+  "file": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/tests/test_iocp_accept.cpp",
+  "output": "CMakeFiles/test_iocp_accept.dir/tests/test_iocp_accept.cpp.obj"
+},
+{
+  "directory": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/test_security.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\test_security.dir\\tests\\test_security.cpp.obj -c \"C:\\Users\\micah\\Documents\\Master Folder\\Repo 1 (Fiber TCP Server)\\tests\\test_security.cpp\"",
+  "file": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/tests/test_security.cpp",
+  "output": "CMakeFiles/test_security.dir/tests/test_security.cpp.obj"
+},
+{
+  "directory": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/test_telemetry.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\test_telemetry.dir\\tests\\test_telemetry.cpp.obj -c \"C:\\Users\\micah\\Documents\\Master Folder\\Repo 1 (Fiber TCP Server)\\tests\\test_telemetry.cpp\"",
+  "file": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/tests/test_telemetry.cpp",
+  "output": "CMakeFiles/test_telemetry.dir/tests/test_telemetry.cpp.obj"
+},
+{
+  "directory": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/MultithreadedServer.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\MultithreadedServer.dir\\src\\main.cpp.obj -c \"C:\\Users\\micah\\Documents\\Master Folder\\Repo 1 (Fiber TCP Server)\\src\\main.cpp\"",
+  "file": "C:/Users/micah/Documents/Master Folder/Repo 1 (Fiber TCP Server)/src/main.cpp",
+  "output": "CMakeFiles/MultithreadedServer.dir/src/main.cpp.obj"
 }
 ]

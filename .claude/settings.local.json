@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(cd \"C:\\\\Users\\\\micah\\\\Documents\\\\Master Folder\"; powershell -ExecutionPolicy Bypass -File \"dump_context.ps1\")"
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+GET, ../public/index.html, 200
+GET, ../public/does_not_exist.txt, 404
+GET, ../Config.hpp, 403
